@@ -356,7 +356,7 @@ class StatusPostIconOptionsState extends State<StatusPostIconOptions> {
     );
   }
 
-    Widget commentsCount() {
+  Widget commentsCount() {
     return Row(
       mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.start,
@@ -365,6 +365,9 @@ class StatusPostIconOptionsState extends State<StatusPostIconOptions> {
           Icons.chat,
           size: iconSize,
           color: Color(0xFF45ADA6),
+        ),
+        SizedBox(
+          width: 4.0,
         ),
         Text(
           widget.commentsCount.toString(),
