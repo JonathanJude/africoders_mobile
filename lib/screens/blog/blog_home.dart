@@ -7,6 +7,7 @@ import 'package:africoders_mobile/widgets/africdoders_loader.dart';
 import 'package:africoders_mobile/widgets/app_drawer.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 class BlogHome extends StatelessWidget {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
@@ -17,7 +18,7 @@ class BlogHome extends StatelessWidget {
       backgroundColor: mainBgColor,
       appBar: buildAppBar(context),
       body: FutureBuilder<List<Blog>>(
-        future: fetchBlogWithNoComments(),
+        future: fetchBlogWithNoComments(http.Client()),
         builder: (context, snapshot) {
           if (snapshot.hasError) print(snapshot.error);
           return snapshot.hasData

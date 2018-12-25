@@ -12,10 +12,11 @@ class NetworkUtils {
   //Authenticate User for Sign In
   static dynamic authenticateUser(String name, String password) async {
     var uri = host + AuthUtils.loginEndPoint;
+    http.Client client = http.Client();
 
     try {
       final response =
-          await http.post(uri, body: {'name': name, 'password': password});
+          await client.post(uri, body: {'name': name, 'password': password});
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -32,9 +33,10 @@ class NetworkUtils {
   //Sign Up User and get response
   static dynamic signUpUser(String name, String email, String password) async {
     var uri = host + AuthUtils.signUpEndPoint;
+    http.Client client = http.Client();
 
     try {
-      final response = await http.post(uri,
+      final response = await client.post(uri,
           body: {'name': name, 'password': password, 'email': email});
 
       final responseJson = json.decode(response.body);

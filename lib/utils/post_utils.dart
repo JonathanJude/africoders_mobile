@@ -11,6 +11,8 @@ class PostUtils {
 
   static Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   static SharedPreferences _sharedPreferences;
+  static http.Client client = http.Client();
+  
 
   static showSnackBar(GlobalKey<ScaffoldState> scaffoldKey, String message) {
     scaffoldKey.currentState.showSnackBar(new SnackBar(
@@ -25,11 +27,11 @@ class PostUtils {
     String endPoint = '/v1/post/status';
     var uri = host + endPoint;
 
-    _sharedPreferences = await _prefs;
+    _sharedPreferences = await _prefs; 
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
-      final response = await http.post(uri, body: {
+      final response = await client.post(uri, body: {
         'body': text
       }, headers: {
         "Authorization": "Bearer $authToken",
@@ -57,7 +59,7 @@ class PostUtils {
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
-      final response = await http.post(uri, body: {
+      final response = await client.post(uri, body: {
         'title': title,
         'body': text
       }, headers: {
@@ -86,7 +88,7 @@ class PostUtils {
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
-      final response = await http.post(uri, body: {
+      final response = await client.post(uri, body: {
         'title': title,
         'body': text
       }, headers: {
@@ -115,7 +117,7 @@ class PostUtils {
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
-      final response = await http.post(uri, body: {
+      final response = await client.post(uri, body: {
         'title': title,
         'body': text,
         'url': url
@@ -146,7 +148,7 @@ class PostUtils {
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
-      final response = await http.post(uri, body: {
+      final response = await client.post(uri, body: {
         'title': title,
         'body': text,
         'fid': forumId
@@ -176,7 +178,7 @@ class PostUtils {
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
-      final response = await http.post(uri, body: {
+      final response = await client.post(uri, body: {
         'pid': postId,
         'body': text
       }, headers: {
@@ -207,7 +209,7 @@ class PostUtils {
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
-      final response = await http.post(uri, body: {
+      final response = await client.post(uri, body: {
         'id': postId,
         'title': title,
         'body': text
@@ -239,7 +241,7 @@ class PostUtils {
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
-      final response = await http.post(uri, body: {
+      final response = await client.post(uri, body: {
         'id': postId,
         'body': text
       }, headers: {
@@ -271,7 +273,7 @@ class PostUtils {
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
-      final response = await http.post(uri, body: {
+      final response = await client.post(uri, body: {
         'id': postId,
         'body': text,
         'title': title,
@@ -304,7 +306,7 @@ class PostUtils {
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
-      final response = await http.post(uri, body: {
+      final response = await client.post(uri, body: {
         'id': commentId,
         'body': text
       }, headers: {
@@ -335,7 +337,7 @@ class PostUtils {
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
-      final response = await http.post(uri, body: {
+      final response = await client.post(uri, body: {
         'id': postId
       }, headers: {
         "Authorization": "Bearer $authToken",
@@ -365,7 +367,7 @@ class PostUtils {
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
-      final response = await http.post(uri, body: {
+      final response = await client.post(uri, body: {
         'id': commentId
       }, headers: {
         "Authorization": "Bearer $authToken",

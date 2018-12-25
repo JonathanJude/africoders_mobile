@@ -4,6 +4,24 @@ import 'package:africoders_mobile/globals.dart';
 import 'package:africoders_mobile/model/jobAdModel.dart';
 import 'package:http/http.dart' as http;
 
+
+//Fecthing Jobs with no comments
+Future<List<JobAd>> fetchJobAdWithNoComments(http.Client client) async {
+  final response = await client.get(jobAdWithNoCommentApi);
+
+  if (response.statusCode == 200) {
+    Map<String, dynamic> mapResponse = json.decode(response.body);
+    final jobs = mapResponse["data"].cast<Map<String, dynamic>>();
+    final listOfJobAds = jobs.map<JobAd>((json) {
+      return JobAd.fromJson(json);
+    }).toList();
+    return listOfJobAds;
+  } else {
+    throw Exception('Failed to load internet');
+  }
+}
+
+/* 
 //Fecthing blogs with no comments
 Future<List<JobAd>> fetchJobAdWithNoComments() async {
   final response = await http.get(jobAdWithNoCommentApi);
@@ -35,3 +53,4 @@ Future<List<JobAd>> fetchJobAdWithComments() async {
     throw Exception('Failed to load internet');
   }
 }
+ */

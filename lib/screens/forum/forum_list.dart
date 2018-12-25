@@ -10,6 +10,8 @@ import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:http/http.dart' as http;
+
 
 class ForumList extends StatefulWidget {
   _ForumListState createState() => _ForumListState();
@@ -25,7 +27,7 @@ class _ForumListState extends State<ForumList> {
         backgroundColor: mainBgColor,
         endDrawer: AppDrawer(context: context),
         body: FutureBuilder<Map<String, dynamic>>(
-          future: fetchForumListing(),
+          future: fetchForumListing(http.Client()),
           builder: (context, snapshot) {
             //Assigning each
             if (snapshot.hasError) print(snapshot.error);

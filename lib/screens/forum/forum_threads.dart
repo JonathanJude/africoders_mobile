@@ -8,6 +8,7 @@ import 'package:africoders_mobile/widgets/app_drawer.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:timeago/timeago.dart' as timeago;
+import 'package:http/http.dart' as http;
 
 class ForumThreads extends StatefulWidget {
   final String forumPath;
@@ -30,7 +31,7 @@ class _ForumThreadsState extends State<ForumThreads> {
       backgroundColor: mainBgColor,
       appBar: buildAppBar(context),
       body: FutureBuilder<List<ForumThread>>(
-        future: fetchForumThreadList(widget.forumPath),
+        future: fetchForumThreadList(http.Client(), widget.forumPath),
         builder: (context, snapshot) {
           if (snapshot.hasError) print(snapshot.error);
           return snapshot.hasData

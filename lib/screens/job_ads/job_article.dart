@@ -13,6 +13,8 @@ import 'package:africoders_mobile/widgets/post_options.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:timeago/timeago.dart' as timeago;
+import 'package:http/http.dart' as http;
+
 
 class JobArticle extends StatefulWidget {
   final int postId;
@@ -90,7 +92,7 @@ class _JobArticleState extends State<JobArticle> {
         alignment: Alignment.bottomCenter,
         children: [
           FutureBuilder<Post>(
-            future: fetchAPostWithComments(widget.postId),
+            future: fetchAPostWithComments(http.Client(), widget.postId),
             builder: (context, snapshot) {
               if (snapshot.hasError) print(snapshot.error);
               return snapshot.hasData

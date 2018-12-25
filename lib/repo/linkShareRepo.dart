@@ -4,6 +4,22 @@ import 'package:africoders_mobile/globals.dart';
 import 'package:africoders_mobile/model/linkShareModel.dart';
 import 'package:http/http.dart' as http;
 
+//Fecthing links with no comments
+Future<List<LinkShare>> fetchLinkShareWithNoComments(http.Client client) async {
+  final response = await client.get(linkShareWithNoCommentApi);
+
+  if (response.statusCode == 200) {
+    Map<String, dynamic> mapResponse = json.decode(response.body);
+    final links = mapResponse["data"].cast<Map<String, dynamic>>();
+    final listOfLinkShares = links.map<LinkShare>((json) {
+      return LinkShare.fromJson(json);
+    }).toList();
+    return listOfLinkShares;
+  } else {
+    throw Exception('Failed to load internet');
+  }
+}
+/* 
 //Fecthing blogs with no comments
 Future<List<LinkShare>> fetchLinkShareWithNoComments() async {
   final response = await http.get(linkShareWithNoCommentApi);
@@ -35,3 +51,4 @@ Future<List<LinkShare>> fetchLinkShareWithComments() async {
     throw Exception('Failed to load internet');
   }
 }
+ */
