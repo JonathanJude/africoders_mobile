@@ -15,7 +15,6 @@ import 'package:flutter/material.dart';
 import 'package:timeago/timeago.dart' as timeago;
 import 'package:http/http.dart' as http;
 
-
 class ForumTopicScreen extends StatefulWidget {
   final int postId;
   ForumTopicScreen({this.postId});
@@ -130,6 +129,7 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
         margin: const EdgeInsets.only(top: 100.0),
         child: new Center(
             child: new Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new AfricodersLoader(),
             new Container(

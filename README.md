@@ -1,4 +1,4 @@
-# africoders_mobile
+Mobile App client for https://www.africoders.com
 
 A new Flutter project.
 

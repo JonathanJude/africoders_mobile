@@ -60,27 +60,6 @@ class _ForumThreadsState extends State<ForumThreads> {
     );
   }
 
-/*   Widget _buildAppBar() {
-    return AppBar(
-      backgroundColor: mainBgColor,
-      centerTitle: true,
-      title: Image.asset(
-        'assets/images/logo_white.png',
-        height: 50.0,
-        width: 100.0,
-      ),
-      actions: <Widget>[
-        IconButton(
-          icon: Icon(Icons.search),
-          onPressed: () {},
-        ),
-        IconButton(
-          icon: Icon(Icons.menu),
-          onPressed: () {},
-        )
-      ],
-    );
-  } */
 }
 
 class ForumThreadList extends StatelessWidget {
