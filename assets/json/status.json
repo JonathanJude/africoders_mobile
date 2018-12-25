@@ -1,0 +1,1471 @@
+{
+    "data": [{
+            "id": 764,
+            "title": "Good morning peeps. Who has use remitano api?",
+            "body": "<p>Good morning peeps. Who has use remitano api?</p>",
+            "slug": "https://africoders.com/status/764",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 1,
+            "views": "21",
+            "replies": "1",
+            "category": "Status",
+            "created": {
+                "date": "2018-12-10 09:25:57.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "updated": {
+                "date": "2018-12-10 09:25:57.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "published": "2018-12-10 11:00:19",
+            "user": {
+                "id": 488,
+                "name": "gbengaogunbule",
+                "vanity": "gbengaogunbule",
+                "avatarUrl": "https://africoders.com/media/pictures/picture-488-1502180287.jpg",
+                "profileUrl": "https://africoders.com/u/gbengaogunbule"
+            },
+            "comment": {
+                "data": [{
+                    "id": 5424,
+                    "body": "<p>This one big pass me o</p>",
+                    "slug": "https://africoders.com/comment/5424",
+                    "likes": 0,
+                    "dislikes": 0,
+                    "shares": 0,
+                    "user": {
+                        "id": 6,
+                        "name": "dhtml",
+                        "vanity": "dhtml",
+                        "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                        "profileUrl": "https://africoders.com/u/dhtml"
+                    },
+                    "views": "0",
+                    "created": {
+                        "date": "2018-12-10 11:00:19.000000",
+                        "timezone_type": 3,
+                        "timezone": "UTC"
+                    },
+                    "updated": {
+                        "date": "2018-12-10 11:00:19.000000",
+                        "timezone_type": 3,
+                        "timezone": "UTC"
+                    }
+                }]
+            }
+        },
+        {
+            "id": 757,
+            "title": "Saw this on nairaland.com and decided to share it with you here. Is about a guy' …",
+            "body": "<p>Saw this on nairaland.com and decided to share it with you here. Is about a guy's post who created a yoruba oriented programming language.</p><p><br></p><p><a href=\"https://www.nairaland.com/4884225/hurray....a-yoruba-programming-language-here.\">https://www.nairaland.com/4884225/hurray....a-yoruba-programming-language-here.</a></p><p><br></p><p>or the github repo</p><p><br></p><p><a href=\"https://anoniscoding.github.io/yorlang/docs/doc.html.\">https://anoniscoding.github.io/yorlang/docs/doc.html.</a></p><p>NB. yorlang is a yoruba version of js</p>",
+            "slug": "https://africoders.com/status/757",
+            "url": null,
+            "likes": 1,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "13",
+            "replies": "4",
+            "category": "Status",
+            "created": {
+                "date": "2018-12-06 22:28:15.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "updated": {
+                "date": "2018-12-06 22:30:47.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "published": "2018-12-09 22:42:52",
+            "user": {
+                "id": 488,
+                "name": "gbengaogunbule",
+                "vanity": "gbengaogunbule",
+                "avatarUrl": "https://africoders.com/media/pictures/picture-488-1502180287.jpg",
+                "profileUrl": "https://africoders.com/u/gbengaogunbule"
+            },
+            "comment": {
+                "data": [{
+                        "id": 5413,
+                        "body": "<p>it is a very good move, once devs can support it</p>",
+                        "slug": "https://africoders.com/comment/5413",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "3",
+                        "created": {
+                            "date": "2018-12-07 09:04:22.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-07 09:04:22.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5414,
+                        "body": "<p>Wow the guy really try.. and they will be saying Nigerians programmers are scrap</p>",
+                        "slug": "https://africoders.com/comment/5414",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 1598,
+                            "name": "Ayo",
+                            "vanity": "Ayo",
+                            "avatarUrl": "https://africoders.com/media/avatars/1598_avatar1539981065.jpg",
+                            "profileUrl": "https://africoders.com/u/Ayo"
+                        },
+                        "views": "3",
+                        "created": {
+                            "date": "2018-12-07 14:24:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-07 14:24:16.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5417,
+                        "body": "<p>Wow! That's great.</p>",
+                        "slug": "https://africoders.com/comment/5417",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 1720,
+                            "name": "mreffk",
+                            "vanity": "mreffk",
+                            "avatarUrl": "https://africoders.com/media/avatars/1720_avatar1542920673.jpg",
+                            "profileUrl": "https://africoders.com/u/mreffk"
+                        },
+                        "views": "1",
+                        "created": {
+                            "date": "2018-12-09 20:41:23.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-09 20:41:23.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5419,
+                        "body": "<p>We are getting there, our boys are really working hard these days.</p>",
+                        "slug": "https://africoders.com/comment/5419",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "1",
+                        "created": {
+                            "date": "2018-12-09 22:42:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-09 22:42:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": 763,
+            "title": "Hello Africoders",
+            "body": "Hello Africoders",
+            "slug": "https://africoders.com/status/763",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "2",
+            "replies": "1",
+            "category": "Status",
+            "created": {
+                "date": "2018-12-09 20:40:46.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "updated": {
+                "date": "2018-12-09 20:40:46.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "published": "2018-12-09 22:42:52",
+            "user": {
+                "id": 1720,
+                "name": "mreffk",
+                "vanity": "mreffk",
+                "avatarUrl": "https://africoders.com/media/avatars/1720_avatar1542920673.jpg",
+                "profileUrl": "https://africoders.com/u/mreffk"
+            },
+            "comment": {
+                "data": [{
+                    "id": 5418,
+                    "body": "<p>Hi there Mr Effik! you are welcome to africoders!!</p>",
+                    "slug": "https://africoders.com/comment/5418",
+                    "likes": 0,
+                    "dislikes": 0,
+                    "shares": 0,
+                    "user": {
+                        "id": 6,
+                        "name": "dhtml",
+                        "vanity": "dhtml",
+                        "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                        "profileUrl": "https://africoders.com/u/dhtml"
+                    },
+                    "views": "1",
+                    "created": {
+                        "date": "2018-12-09 22:42:52.000000",
+                        "timezone_type": 3,
+                        "timezone": "UTC"
+                    },
+                    "updated": {
+                        "date": "2018-12-09 22:42:52.000000",
+                        "timezone_type": 3,
+                        "timezone": "UTC"
+                    }
+                }]
+            }
+        },
+        {
+            "id": 754,
+            "title": "Bootstrap&nbsp;or Zurb Foundation ???",
+            "body": "<p>Bootstrap&nbsp;or Zurb Foundation ???</p>",
+            "slug": "https://africoders.com/status/754",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "30",
+            "replies": "6",
+            "category": "Status",
+            "created": {
+                "date": "2018-12-05 10:03:28.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "updated": {
+                "date": "2018-12-05 10:06:21.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "published": "2018-12-07 20:05:03",
+            "user": {
+                "id": 64,
+                "name": "goodmuyis",
+                "vanity": "goodmuyis",
+                "avatarUrl": "https://africoders.com/media/avatars/64_avatar1541009700.jpg",
+                "profileUrl": "https://africoders.com/u/goodmuyis"
+            },
+            "comment": {
+                "data": [{
+                        "id": 5401,
+                        "body": "<p>I dont have sufficient information of zurb, so I cannot really say.</p>",
+                        "slug": "https://africoders.com/comment/5401",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "2",
+                        "created": {
+                            "date": "2018-12-05 15:55:39.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-05 15:55:39.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5402,
+                        "body": "Boostrap sure pass",
+                        "slug": "https://africoders.com/comment/5402",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 1598,
+                            "name": "Ayo",
+                            "vanity": "Ayo",
+                            "avatarUrl": "https://africoders.com/media/avatars/1598_avatar1539981065.jpg",
+                            "profileUrl": "https://africoders.com/u/Ayo"
+                        },
+                        "views": "2",
+                        "created": {
+                            "date": "2018-12-05 15:59:08.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-05 15:59:08.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5410,
+                        "body": "<p>Just hearing zub for the first time, but I for sure kno you can't go wrong with Boostrap</p>",
+                        "slug": "https://africoders.com/comment/5410",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 29,
+                            "name": "Lefthand",
+                            "vanity": "lefthand",
+                            "avatarUrl": "https://africoders.com/media/avatars/29_avatar1541363856.JPG",
+                            "profileUrl": "https://africoders.com/u/lefthand"
+                        },
+                        "views": "4",
+                        "created": {
+                            "date": "2018-12-06 00:35:56.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-06 00:35:56.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5412,
+                        "body": "<p>Bootstrap is found practically everywhere you find jquery, wordpress, drupal, themeforest, even .NET sef.<br>Some mobile development frameworks use it as well. It is not that there are no other frontend frameworks mind you.</p>",
+                        "slug": "https://africoders.com/comment/5412",
+                        "likes": 1,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "3",
+                        "created": {
+                            "date": "2018-12-06 09:05:39.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-06 09:05:39.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5415,
+                        "body": "<p>is themeforest now a front-end language? <br></p>",
+                        "slug": "https://africoders.com/comment/5415",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 1727,
+                            "name": "Akotech",
+                            "vanity": "Akotech",
+                            "avatarUrl": "https://africoders.com/media/avatars/1727_avatar1544191320.jpg",
+                            "profileUrl": "https://africoders.com/u/Akotech"
+                        },
+                        "views": "3",
+                        "created": {
+                            "date": "2018-12-07 15:11:55.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-07 15:11:55.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5416,
+                        "body": "<p>No it is not, just a place where you can purchase themes.</p>",
+                        "slug": "https://africoders.com/comment/5416",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "3",
+                        "created": {
+                            "date": "2018-12-07 20:05:03.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-07 20:05:03.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": 756,
+            "title": "Papa Dhtml..  What do u have to tell those young boys that think yahoo is the on …",
+            "body": "Papa Dhtml..<br /><br />\n What do u have to tell those young boys that think yahoo is the only sure way to survive",
+            "slug": "https://africoders.com/status/756",
+            "url": null,
+            "likes": 1,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "10",
+            "replies": "2",
+            "category": "Status",
+            "created": {
+                "date": "2018-12-05 21:10:41.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "updated": {
+                "date": "2018-12-05 21:10:41.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "published": "2018-12-06 08:18:35",
+            "user": {
+                "id": 1598,
+                "name": "Ayo",
+                "vanity": "Ayo",
+                "avatarUrl": "https://africoders.com/media/avatars/1598_avatar1539981065.jpg",
+                "profileUrl": "https://africoders.com/u/Ayo"
+            },
+            "comment": {
+                "data": [{
+                        "id": 5407,
+                        "body": "<p>They need to re-orient themselves and learn that there are other ways to survive, if everyone is doing yahoo, then we will all just kill-off each other.<br>They need to repent before it is too late for them.</p>",
+                        "slug": "https://africoders.com/comment/5407",
+                        "likes": 1,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "3",
+                        "created": {
+                            "date": "2018-12-05 21:22:19.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-05 21:22:19.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5411,
+                        "body": "Love that bro",
+                        "slug": "https://africoders.com/comment/5411",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 1598,
+                            "name": "Ayo",
+                            "vanity": "Ayo",
+                            "avatarUrl": "https://africoders.com/media/avatars/1598_avatar1539981065.jpg",
+                            "profileUrl": "https://africoders.com/u/Ayo"
+                        },
+                        "views": "2",
+                        "created": {
+                            "date": "2018-12-06 08:18:35.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-06 08:18:35.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": 744,
+            "title": "Hey, dhtml, are you still using your framework you wrote sometimes ago?",
+            "body": "<p>Hey, dhtml, are you still using your framework you wrote sometimes ago?</p>",
+            "slug": "https://africoders.com/status/744",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "195",
+            "replies": "14",
+            "category": "Status",
+            "created": {
+                "date": "2018-11-29 11:55:04.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "updated": {
+                "date": "2018-11-29 11:55:04.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "published": "2018-12-05 23:41:22",
+            "user": {
+                "id": 488,
+                "name": "gbengaogunbule",
+                "vanity": "gbengaogunbule",
+                "avatarUrl": "https://africoders.com/media/pictures/picture-488-1502180287.jpg",
+                "profileUrl": "https://africoders.com/u/gbengaogunbule"
+            },
+            "comment": {
+                "data": [{
+                        "id": 5345,
+                        "body": "<p>ah, the framework still exist, but time to maintain has been an issue. I am still experimenting a bit on the backend things.</p>",
+                        "slug": "https://africoders.com/comment/5345",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "10",
+                        "created": {
+                            "date": "2018-11-29 15:53:30.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-11-29 15:53:30.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5346,
+                        "body": "Wow and u never told us....<br />\nPls gist us small about the framework",
+                        "slug": "https://africoders.com/comment/5346",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 1598,
+                            "name": "Ayo",
+                            "vanity": "Ayo",
+                            "avatarUrl": "https://africoders.com/media/avatars/1598_avatar1539981065.jpg",
+                            "profileUrl": "https://africoders.com/u/Ayo"
+                        },
+                        "views": "8",
+                        "created": {
+                            "date": "2018-11-29 22:48:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-11-29 22:48:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5348,
+                        "body": "<p>what are the challenges of creating your own framework. Just finish building mine but want to know the challenges awaiting me</p>",
+                        "slug": "https://africoders.com/comment/5348",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 488,
+                            "name": "gbengaogunbule",
+                            "vanity": "gbengaogunbule",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-488-1502180287.jpg",
+                            "profileUrl": "https://africoders.com/u/gbengaogunbule"
+                        },
+                        "views": "7",
+                        "created": {
+                            "date": "2018-11-29 23:45:40.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-11-29 23:45:40.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5349,
+                        "body": "<p>You need to build things with it. I built very big stuffs with my framework, even stuffs bigger than Africoders. That is how you will be able to test, debug, detect and patch stuffs.</p>",
+                        "slug": "https://africoders.com/comment/5349",
+                        "likes": 2,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "6",
+                        "created": {
+                            "date": "2018-11-30 03:26:57.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-11-30 03:26:57.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5352,
+                        "body": "<p>what language did you use to build the framework?</p>",
+                        "slug": "https://africoders.com/comment/5352",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 1598,
+                            "name": "Ayo",
+                            "vanity": "Ayo",
+                            "avatarUrl": "https://africoders.com/media/avatars/1598_avatar1539981065.jpg",
+                            "profileUrl": "https://africoders.com/u/Ayo"
+                        },
+                        "views": "10",
+                        "created": {
+                            "date": "2018-11-30 09:13:29.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-11-30 09:13:29.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5354,
+                        "body": "<p>Mine was a php-based mvc framework like laravel.</p>",
+                        "slug": "https://africoders.com/comment/5354",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "10",
+                        "created": {
+                            "date": "2018-11-30 18:00:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-11-30 18:00:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5363,
+                        "body": "Eassy to learn??  Let start using it",
+                        "slug": "https://africoders.com/comment/5363",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 1598,
+                            "name": "Ayo",
+                            "vanity": "Ayo",
+                            "avatarUrl": "https://africoders.com/media/avatars/1598_avatar1539981065.jpg",
+                            "profileUrl": "https://africoders.com/u/Ayo"
+                        },
+                        "views": "11",
+                        "created": {
+                            "date": "2018-11-30 20:54:21.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-11-30 20:54:21.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5364,
+                        "body": "<p>My framework is for private use only, however, its closest equivalent is laravel. There are just so many frameworks out there to use, pick your choice.</p>",
+                        "slug": "https://africoders.com/comment/5364",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "12",
+                        "created": {
+                            "date": "2018-11-30 20:59:41.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-11-30 20:59:41.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5371,
+                        "body": "<p>Ok. Already using it to build apps anyway. So many challenges right now. One thing I discovered right now as a challege in it(my frame work) as at now is about pm</p>",
+                        "slug": "https://africoders.com/comment/5371",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 488,
+                            "name": "gbengaogunbule",
+                            "vanity": "gbengaogunbule",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-488-1502180287.jpg",
+                            "profileUrl": "https://africoders.com/u/gbengaogunbule"
+                        },
+                        "views": "11",
+                        "created": {
+                            "date": "2018-12-01 23:56:21.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-01 23:56:21.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5372,
+                        "body": "<p>That happens, then you how do you cope with updates, documentation. Then most importantly, if you developed an app with it and you want someone else to manage the app?</p>",
+                        "slug": "https://africoders.com/comment/5372",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "9",
+                        "created": {
+                            "date": "2018-12-02 06:43:41.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-02 06:43:41.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5399,
+                        "body": "<p>@dhtml i dont get your question</p>",
+                        "slug": "https://africoders.com/comment/5399",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 488,
+                            "name": "gbengaogunbule",
+                            "vanity": "gbengaogunbule",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-488-1502180287.jpg",
+                            "profileUrl": "https://africoders.com/u/gbengaogunbule"
+                        },
+                        "views": "3",
+                        "created": {
+                            "date": "2018-12-04 22:49:54.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-04 22:49:54.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5400,
+                        "body": "<p>Your framework, you are supposed to work on the documentation/usage. So that if for example you developed something with it, and someone else (other than you) need to work on the project, they will need to know how to use it, and will require a documentation.<br>How will you cope with something like this if it should come up?</p>",
+                        "slug": "https://africoders.com/comment/5400",
+                        "likes": 1,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "4",
+                        "created": {
+                            "date": "2018-12-05 02:16:20.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-05 02:16:20.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5408,
+                        "body": "<p>never thought of that. I will do that</p>",
+                        "slug": "https://africoders.com/comment/5408",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 488,
+                            "name": "gbengaogunbule",
+                            "vanity": "gbengaogunbule",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-488-1502180287.jpg",
+                            "profileUrl": "https://africoders.com/u/gbengaogunbule"
+                        },
+                        "views": "4",
+                        "created": {
+                            "date": "2018-12-05 23:19:10.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-05 23:19:10.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5409,
+                        "body": "<p>If you do not factor this in, you will be the only one that can use the framework forever. And even you, if there is no versioning system, updates e.t.c you will get a BROKEN CODE.</p>",
+                        "slug": "https://africoders.com/comment/5409",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "3",
+                        "created": {
+                            "date": "2018-12-05 23:41:22.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-05 23:41:22.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": 755,
+            "title": "WordPress Developer needed?",
+            "body": "WordPress Developer needed?",
+            "slug": "https://africoders.com/status/755",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 1,
+            "views": "44",
+            "replies": "3",
+            "category": "Status",
+            "created": {
+                "date": "2018-12-05 16:32:44.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "updated": {
+                "date": "2018-12-05 16:32:44.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "published": "2018-12-05 21:08:56",
+            "user": {
+                "id": 40,
+                "name": "dayokuns",
+                "vanity": "dayokuns",
+                "avatarUrl": "https://africoders.com/media/pictures/picture-40-1502950404.jpg",
+                "profileUrl": "https://africoders.com/u/dayokuns"
+            },
+            "comment": {
+                "data": [{
+                        "id": 5404,
+                        "body": "Please 0807 289 5365",
+                        "slug": "https://africoders.com/comment/5404",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 40,
+                            "name": "dayokuns",
+                            "vanity": "dayokuns",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-40-1502950404.jpg",
+                            "profileUrl": "https://africoders.com/u/dayokuns"
+                        },
+                        "views": "2",
+                        "created": {
+                            "date": "2018-12-05 16:39:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-05 16:39:52.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5405,
+                        "body": "<p>Can we have an idea of the nature of the task?</p>",
+                        "slug": "https://africoders.com/comment/5405",
+                        "likes": 1,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "3",
+                        "created": {
+                            "date": "2018-12-05 17:30:57.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-05 17:30:57.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5406,
+                        "body": "Is it a blog or any other stuff contact me 08091626454",
+                        "slug": "https://africoders.com/comment/5406",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 1598,
+                            "name": "Ayo",
+                            "vanity": "Ayo",
+                            "avatarUrl": "https://africoders.com/media/avatars/1598_avatar1539981065.jpg",
+                            "profileUrl": "https://africoders.com/u/Ayo"
+                        },
+                        "views": "3",
+                        "created": {
+                            "date": "2018-12-05 21:08:56.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-05 21:08:56.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": 753,
+            "title": "is it compulsory for a good programmer to have the wisdom of seo?",
+            "body": "<p>is it compulsory for a good programmer to have the wisdom of seo?</p>",
+            "slug": "https://africoders.com/status/753",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "28",
+            "replies": "4",
+            "category": "Status",
+            "created": {
+                "date": "2018-12-04 09:48:56.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "updated": {
+                "date": "2018-12-04 09:48:56.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "published": "2018-12-05 16:00:43",
+            "user": {
+                "id": 1598,
+                "name": "Ayo",
+                "vanity": "Ayo",
+                "avatarUrl": "https://africoders.com/media/avatars/1598_avatar1539981065.jpg",
+                "profileUrl": "https://africoders.com/u/Ayo"
+            },
+            "comment": {
+                "data": [{
+                        "id": 5396,
+                        "body": "Well I think front end devs should have knowledge of SEO",
+                        "slug": "https://africoders.com/comment/5396",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 697,
+                            "name": "Lord Jerry",
+                            "vanity": "LordJerry",
+                            "avatarUrl": "https://africoders.com/media/avatars/697_avatar1541162054.jpg",
+                            "profileUrl": "https://africoders.com/u/LordJerry"
+                        },
+                        "views": "12",
+                        "created": {
+                            "date": "2018-12-04 11:52:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-04 11:52:50.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5397,
+                        "body": "<p>It is not the duty of a programmer, if you know it, good for you. A good programmer is not also expected to have good knowledge of graphics/UI. A programmer is not an all-in-one.</p>",
+                        "slug": "https://africoders.com/comment/5397",
+                        "likes": 1,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "4",
+                        "created": {
+                            "date": "2018-12-04 16:04:18.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-04 16:04:18.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5398,
+                        "body": "You are welcome",
+                        "slug": "https://africoders.com/comment/5398",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "4",
+                        "created": {
+                            "date": "2018-12-04 16:04:25.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-04 16:04:25.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5403,
+                        "body": "Sweet",
+                        "slug": "https://africoders.com/comment/5403",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 1598,
+                            "name": "Ayo",
+                            "vanity": "Ayo",
+                            "avatarUrl": "https://africoders.com/media/avatars/1598_avatar1539981065.jpg",
+                            "profileUrl": "https://africoders.com/u/Ayo"
+                        },
+                        "views": "3",
+                        "created": {
+                            "date": "2018-12-05 16:00:43.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-05 16:00:43.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": 752,
+            "title": "Hey guys. For someone pursuing a career in programming, what professional course …",
+            "body": "Hey guys.<br /><br />\nFor someone pursuing a career in programming, what professional courses can a person do to boast his CV?",
+            "slug": "https://africoders.com/status/752",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "17",
+            "replies": "2",
+            "category": "Status",
+            "created": {
+                "date": "2018-12-03 18:58:22.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "updated": {
+                "date": "2018-12-03 18:58:22.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "published": "2018-12-04 08:30:28",
+            "user": {
+                "id": 18,
+                "name": "mista_cee",
+                "vanity": "mistacee",
+                "avatarUrl": "https://africoders.com/media/pictures/picture-18-1501622690.jpg",
+                "profileUrl": "https://africoders.com/u/mistacee"
+            },
+            "comment": {
+                "data": [{
+                        "id": 5394,
+                        "body": "<p>I dont know the answer to this one. As far as i know, boasting in CV has more to do with TASKS ACCOMPLISHED, TEAMS you worked with, GITHUB repos, OPENSOURCE contribs e.t.c. things that people can look at and nod their heads that - this dude is a true programmer.<br>All the certifications like JAVA e.t.c too help mind you.</p>",
+                        "slug": "https://africoders.com/comment/5394",
+                        "likes": 1,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "7",
+                        "created": {
+                            "date": "2018-12-03 19:19:29.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-03 19:19:29.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5395,
+                        "body": "Okay.. sounds good.<br />\n<br />\nThanks sir",
+                        "slug": "https://africoders.com/comment/5395",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 18,
+                            "name": "mista_cee",
+                            "vanity": "mistacee",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-18-1501622690.jpg",
+                            "profileUrl": "https://africoders.com/u/mistacee"
+                        },
+                        "views": "5",
+                        "created": {
+                            "date": "2018-12-04 08:30:28.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-04 08:30:28.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": 751,
+            "title": "What does it takes to create a programming language  not a frame work oo",
+            "body": "What does it takes to create a programming language  not a frame work oo",
+            "slug": "https://africoders.com/status/751",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "49",
+            "replies": "6",
+            "category": "Status",
+            "created": {
+                "date": "2018-12-02 19:28:39.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "updated": {
+                "date": "2018-12-02 19:28:39.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "published": "2018-12-03 08:12:21",
+            "user": {
+                "id": 1598,
+                "name": "Ayo",
+                "vanity": "Ayo",
+                "avatarUrl": "https://africoders.com/media/avatars/1598_avatar1539981065.jpg",
+                "profileUrl": "https://africoders.com/u/Ayo"
+            },
+            "comment": {
+                "data": [{
+                        "id": 5386,
+                        "body": "<p>There is a general rule to development, namely, anything you want to develop, you need to research it properly.<br>For example, I can design regular windows desktop applications because I know the languages to use, and have studied regular windows app very thoroughly.<br>If you wish to develop your own programming language, you can. But the questions are:<br>1. Why will you want to do that?<br>2. Have you studied existing programming languages well enough so that you can design something BETTER.</p>",
+                        "slug": "https://africoders.com/comment/5386",
+                        "likes": 1,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "4",
+                        "created": {
+                            "date": "2018-12-02 19:45:07.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-02 19:45:07.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5387,
+                        "body": "How long will the project live, what resource is available.",
+                        "slug": "https://africoders.com/comment/5387",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 11,
+                            "name": "limistah",
+                            "vanity": "limistah",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-11-1502090897.jpg",
+                            "profileUrl": "https://africoders.com/u/limistah"
+                        },
+                        "views": "3",
+                        "created": {
+                            "date": "2018-12-02 19:57:45.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-02 19:57:45.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5388,
+                        "body": "Am not planning on creating a programming language,, i just want to get the idea behind it... What can be used to create the language",
+                        "slug": "https://africoders.com/comment/5388",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 1598,
+                            "name": "Ayo",
+                            "vanity": "Ayo",
+                            "avatarUrl": "https://africoders.com/media/avatars/1598_avatar1539981065.jpg",
+                            "profileUrl": "https://africoders.com/u/Ayo"
+                        },
+                        "views": "7",
+                        "created": {
+                            "date": "2018-12-02 20:12:43.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-02 20:12:43.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5390,
+                        "body": "<p>That is a recursive question, a programming language is used to create programming languages.<br>Even languages like Python, C can be used to create programming languages.</p>",
+                        "slug": "https://africoders.com/comment/5390",
+                        "likes": 1,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 6,
+                            "name": "dhtml",
+                            "vanity": "dhtml",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+                            "profileUrl": "https://africoders.com/u/dhtml"
+                        },
+                        "views": "8",
+                        "created": {
+                            "date": "2018-12-02 20:30:57.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-02 20:30:57.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5392,
+                        "body": "Creating a programming language really isn't easy I am currently studying how compilers work I want to contribute to a programming language (astrolang) I must confess it's really not easy... The dude I wanna work with as been on the language for 2 years plus now.... Just imagine",
+                        "slug": "https://africoders.com/comment/5392",
+                        "likes": 2,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 697,
+                            "name": "Lord Jerry",
+                            "vanity": "LordJerry",
+                            "avatarUrl": "https://africoders.com/media/avatars/697_avatar1541162054.jpg",
+                            "profileUrl": "https://africoders.com/u/LordJerry"
+                        },
+                        "views": "8",
+                        "created": {
+                            "date": "2018-12-02 22:43:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-02 22:43:59.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    },
+                    {
+                        "id": 5393,
+                        "body": "Experimental/Learning, to side project, to open source.<br>\n@lord_jerry the guy is trying jare.",
+                        "slug": "https://africoders.com/comment/5393",
+                        "likes": 0,
+                        "dislikes": 0,
+                        "shares": 0,
+                        "user": {
+                            "id": 11,
+                            "name": "limistah",
+                            "vanity": "limistah",
+                            "avatarUrl": "https://africoders.com/media/pictures/picture-11-1502090897.jpg",
+                            "profileUrl": "https://africoders.com/u/limistah"
+                        },
+                        "views": "10",
+                        "created": {
+                            "date": "2018-12-03 08:11:51.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        },
+                        "updated": {
+                            "date": "2018-12-03 08:12:21.000000",
+                            "timezone_type": 3,
+                            "timezone": "UTC"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "meta": {
+        "pagination": {
+            "total": 401,
+            "count": 10,
+            "per_page": 10,
+            "current_page": 1,
+            "total_pages": 41,
+            "links": {
+                "next": "https://api.africoders.com/v1/posts?page=2"
+            }
+        }
+    }
+}

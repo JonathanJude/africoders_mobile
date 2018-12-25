@@ -1,0 +1,109 @@
+{
+    "data": [{
+            "id": 764,
+            "title": "Good morning peeps. Who has use remitano api?",
+            "body": "<p>Good morning peeps. Who has use remitano api?</p>",
+            "slug": "https://africoders.com/status/764",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 1,
+            "views": "21",
+            "replies": "1",
+            "category": "Status"
+        },
+        {
+            "id": 757,
+            "title": "Saw this on nairaland.com and decided to share it with you here. Is about a guy' …",
+            "body": "<p>Saw this on nairaland.com and decided to share it with you here. Is about a guy's post who created a yoruba oriented programming language.</p><p><br></p><p><a href=\"https://www.nairaland.com/4884225/hurray....a-yoruba-programming-language-here.\">https://www.nairaland.com/4884225/hurray....a-yoruba-programming-language-here.</a></p><p><br></p><p>or the github repo</p><p><br></p><p><a href=\"https://anoniscoding.github.io/yorlang/docs/doc.html.\">https://anoniscoding.github.io/yorlang/docs/doc.html.</a></p><p>NB. yorlang is a yoruba version of js</p>",
+            "slug": "https://africoders.com/status/757",
+            "url": null,
+            "likes": 1,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "13",
+            "replies": "4",
+            "category": "Status"
+        },
+        {
+            "id": 763,
+            "title": "Hello Africoders",
+            "body": "Hello Africoders",
+            "slug": "https://africoders.com/status/763",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "2",
+            "replies": "1",
+            "category": "Status"
+
+        },
+        {
+            "id": 754,
+            "title": "Bootstrap&nbsp;or Zurb Foundation ???",
+            "body": "<p>Bootstrap&nbsp;or Zurb Foundation ???</p>",
+            "slug": "https://africoders.com/status/754",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "30",
+            "replies": "6",
+            "category": "Status"
+
+        },
+        {
+            "id": 756,
+            "title": "Papa Dhtml..  What do u have to tell those young boys that think yahoo is the on …",
+            "body": "Papa Dhtml..<br /><br />\n What do u have to tell those young boys that think yahoo is the only sure way to survive",
+            "slug": "https://africoders.com/status/756",
+            "url": null,
+            "likes": 1,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "10",
+            "replies": "2",
+            "category": "Status"
+        },
+        {
+            "id": 744,
+            "title": "Hey, dhtml, are you still using your framework you wrote sometimes ago?",
+            "body": "<p>Hey, dhtml, are you still using your framework you wrote sometimes ago?</p>",
+            "slug": "https://africoders.com/status/744",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 0,
+            "views": "195",
+            "replies": "14",
+            "category": "Status"
+        },
+        {
+            "id": 755,
+            "title": "WordPress Developer needed?",
+            "body": "WordPress Developer needed?",
+            "slug": "https://africoders.com/status/755",
+            "url": null,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 1,
+            "views": "44",
+            "replies": "3",
+            "category": "Status"
+        }
+
+    ],
+    "meta": {
+        "pagination": {
+            "total": 401,
+            "count": 10,
+            "per_page": 10,
+            "current_page": 1,
+            "total_pages": 41,
+            "links": {
+                "next": "https://api.africoders.com/v1/posts?page=2"
+            }
+        }
+    }
+}
