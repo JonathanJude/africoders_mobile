@@ -71,12 +71,14 @@ class NetworkUtils {
 
   static fetch(var authToken, var endPoint) async {
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     try {
-      final response = await http.get(
+      final response = await client.get(
         uri,
         headers: {'Authorization': authToken},
       );
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;

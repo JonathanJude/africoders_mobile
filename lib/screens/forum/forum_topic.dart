@@ -1,4 +1,3 @@
-import 'package:africoders_mobile/colors.dart';
 import 'package:africoders_mobile/components/comment_text_box.dart';
 import 'package:africoders_mobile/components/parse_html.dart';
 import 'package:africoders_mobile/model/postModel.dart';
@@ -9,10 +8,8 @@ import 'package:africoders_mobile/widgets/app_drawer.dart';
 import 'package:africoders_mobile/widgets/date_time_formats.dart';
 import 'package:africoders_mobile/widgets/post_icons_options.dart';
 import 'package:africoders_mobile/widgets/post_list.dart';
-import 'package:africoders_mobile/widgets/post_options.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:timeago/timeago.dart' as timeago;
 import 'package:http/http.dart' as http;
 
 class ForumTopicScreen extends StatefulWidget {

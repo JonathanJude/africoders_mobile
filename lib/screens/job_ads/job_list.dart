@@ -1,5 +1,4 @@
 import 'package:africoders_mobile/colors.dart';
-import 'package:africoders_mobile/components/parse_html.dart';
 import 'package:africoders_mobile/model/jobAdModel.dart';
 import 'package:africoders_mobile/screens/job_ads/job_article.dart';
 import 'package:flutter/material.dart';

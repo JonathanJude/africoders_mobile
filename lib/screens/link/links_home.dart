@@ -1,10 +1,7 @@
 import 'package:africoders_mobile/colors.dart';
 import 'package:africoders_mobile/model/linkShareModel.dart';
-import 'package:africoders_mobile/repo/jobAdRepo.dart';
 import 'package:africoders_mobile/repo/linkShareRepo.dart';
-import 'package:africoders_mobile/screens/job_ads/job_list.dart';
-import 'package:africoders_mobile/screens/job_ads/place_job_ad.dart';
-import 'package:africoders_mobile/screens/link/job_list.dart';
+import 'package:africoders_mobile/screens/link/link_list.dart';
 import 'package:africoders_mobile/screens/link/share_a_link.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';
 import 'package:africoders_mobile/widgets/app_drawer.dart';

@@ -3,7 +3,6 @@ import 'package:africoders_mobile/repo/statusRepo.dart';
 import 'package:africoders_mobile/model/statusModel.dart';
 import 'package:africoders_mobile/screens/status/status_list.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';
-import 'package:africoders_mobile/widgets/app_drawer.dart';
 import 'package:africoders_mobile/widgets/status_app_drawer.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';

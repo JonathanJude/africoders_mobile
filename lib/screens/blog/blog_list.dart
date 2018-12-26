@@ -1,4 +1,3 @@
-import 'package:africoders_mobile/auth/auth.dart';
 import 'package:africoders_mobile/colors.dart';
 import 'package:africoders_mobile/components/parse_html.dart';
 import 'package:africoders_mobile/model/blogModel.dart';

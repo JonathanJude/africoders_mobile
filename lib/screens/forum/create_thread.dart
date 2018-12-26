@@ -3,7 +3,6 @@ import 'package:africoders_mobile/components/error_box.dart';
 import 'package:africoders_mobile/screens/forum/components/create_thread_button.dart';
 import 'package:africoders_mobile/screens/forum/components/thread_content_textfield.dart';
 import 'package:africoders_mobile/screens/forum/components/thread_title_textfield.dart';
-import 'package:africoders_mobile/screens/forum/forum_threads.dart';
 import 'package:africoders_mobile/screens/forum/forum_topic.dart';
 import 'package:africoders_mobile/utils/post_utils.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';

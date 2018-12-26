@@ -1,17 +1,14 @@
 import 'package:africoders_mobile/colors.dart';
 import 'package:africoders_mobile/repo/forumListRepo.dart';
-import 'package:africoders_mobile/screens/forum/forum_threads.dart';
 import 'package:africoders_mobile/screens/forum/widgets/forum_board.dart';
 import 'package:africoders_mobile/screens/forum/widgets/forum_group_card.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';
 import 'package:africoders_mobile/widgets/app_drawer.dart';
-import 'package:africoders_mobile/widgets/expanding_widget.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:http/http.dart' as http;
-
 
 class ForumList extends StatefulWidget {
   _ForumListState createState() => _ForumListState();

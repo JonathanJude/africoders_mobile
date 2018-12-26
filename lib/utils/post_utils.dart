@@ -11,7 +11,7 @@ class PostUtils {
 
   static Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   static SharedPreferences _sharedPreferences;
-  static http.Client client = http.Client();
+  //http.Client client = http.Client();
 
   static showSnackBar(GlobalKey<ScaffoldState> scaffoldKey, String message) {
     scaffoldKey.currentState.showSnackBar(new SnackBar(
@@ -25,6 +25,7 @@ class PostUtils {
   static dynamic postStatus(String text) async {
     String endPoint = '/v1/post/status';
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
@@ -54,6 +55,7 @@ class PostUtils {
   static dynamic createBlog(String title, String text) async {
     String endPoint = '/v1/post/blog';
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
@@ -84,6 +86,7 @@ class PostUtils {
   static dynamic createJobAd(String title, String text) async {
     String endPoint = '/v1/post/job';
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
@@ -114,6 +117,7 @@ class PostUtils {
   static dynamic createLinkShare(String title, String text, String url) async {
     String endPoint = '/v1/post/link';
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
@@ -146,6 +150,7 @@ class PostUtils {
       String title, String text, String forumId) async {
     String endPoint = '/v1/post/forum';
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
@@ -177,6 +182,7 @@ class PostUtils {
   static dynamic postComment(String postId, String text) async {
     String endPoint = '/v1/comment';
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
@@ -209,6 +215,7 @@ class PostUtils {
   static dynamic updatePost(String postId, String title, String text) async {
     String endPoint = '/v1/edit/post';
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
@@ -242,6 +249,7 @@ class PostUtils {
   static dynamic updateStatus(String postId, String text) async {
     String endPoint = '/v1/edit/post';
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
@@ -275,6 +283,7 @@ class PostUtils {
       String postId, String title, String text, String url) async {
     String endPoint = '/v1/edit/post';
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
@@ -309,6 +318,7 @@ class PostUtils {
   static dynamic updateComment(String commentId, String text) async {
     String endPoint = '/v1/edit/comment';
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
@@ -341,6 +351,7 @@ class PostUtils {
   static dynamic deletePost(String postId) async {
     String endPoint = '/v1/del/post';
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
@@ -372,6 +383,7 @@ class PostUtils {
   static dynamic deleteComment(String commentId) async {
     String endPoint = '/v1/del/comment';
     var uri = host + endPoint;
+    http.Client client = http.Client();
 
     _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
@@ -383,8 +395,7 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
-  client.close();
-
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;

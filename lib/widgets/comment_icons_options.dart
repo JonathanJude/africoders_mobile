@@ -1,12 +1,9 @@
 import 'package:africoders_mobile/colors.dart';
-import 'package:africoders_mobile/screens/blog/blog_article.dart';
-import 'package:africoders_mobile/screens/blog/blog_home.dart';
 import 'package:africoders_mobile/utils/auth_util.dart';
 import 'package:africoders_mobile/utils/post_utils.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CommentIconsOptions extends StatefulWidget {

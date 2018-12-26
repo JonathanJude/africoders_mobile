@@ -8,15 +8,11 @@ import 'package:africoders_mobile/widgets/africdoders_loader.dart';
 import 'package:africoders_mobile/widgets/app_drawer.dart';
 import 'package:africoders_mobile/widgets/date_time_formats.dart';
 import 'package:africoders_mobile/widgets/link_icons_options.dart';
-import 'package:africoders_mobile/widgets/post_icons_options.dart';
 import 'package:africoders_mobile/widgets/post_list.dart';
-import 'package:africoders_mobile/widgets/post_options.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:timeago/timeago.dart' as timeago;
 import 'package:url_launcher/url_launcher.dart';
 import 'package:http/http.dart' as http;
-
 
 class LinkArticle extends StatefulWidget {
   final int postId;

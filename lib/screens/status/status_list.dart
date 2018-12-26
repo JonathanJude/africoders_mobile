@@ -1,5 +1,4 @@
 import 'package:africoders_mobile/colors.dart';
-import 'package:africoders_mobile/components/comment_text_box.dart';
 import 'package:africoders_mobile/components/error_box.dart';
 import 'package:africoders_mobile/components/parse_html.dart';
 import 'package:africoders_mobile/model/statusModel.dart';
@@ -10,9 +9,7 @@ import 'package:africoders_mobile/utils/post_utils.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';
 import 'package:africoders_mobile/widgets/comment_icons_options.dart';
 import 'package:africoders_mobile/widgets/expanding_widget.dart';
-import 'package:africoders_mobile/widgets/post_options.dart';
 import 'package:africoders_mobile/widgets/status_icons_options.dart';
-import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:timeago/timeago.dart' as timeago;
 

@@ -9,10 +9,8 @@ import 'package:africoders_mobile/widgets/app_drawer.dart';
 import 'package:africoders_mobile/widgets/date_time_formats.dart';
 import 'package:africoders_mobile/widgets/post_icons_options.dart';
 import 'package:africoders_mobile/widgets/post_list.dart';
-import 'package:africoders_mobile/widgets/post_options.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:timeago/timeago.dart' as timeago;
 import 'package:http/http.dart' as http;
 
 
