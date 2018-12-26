@@ -5,9 +5,9 @@ import 'package:http/http.dart' as http;
 
 import '../model/statusModel.dart';
 
-
 Future<List<StatusModel>> fetchStatusComments(http.Client client) async {
   final response = await client.get(statusApi);
+  client.close();
 
   if (response.statusCode == 200) {
     Map<String, dynamic> mapResponse = json.decode(response.body);
@@ -20,7 +20,6 @@ Future<List<StatusModel>> fetchStatusComments(http.Client client) async {
     throw Exception('Failed to load status');
   }
 }
-
 
 /* Future<List<StatusModel>> fetchStatusComments() async {
   final response = await http.get(statusApi);

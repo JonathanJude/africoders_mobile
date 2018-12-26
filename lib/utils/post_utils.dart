@@ -12,7 +12,6 @@ class PostUtils {
   static Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   static SharedPreferences _sharedPreferences;
   static http.Client client = http.Client();
-  
 
   static showSnackBar(GlobalKey<ScaffoldState> scaffoldKey, String message) {
     scaffoldKey.currentState.showSnackBar(new SnackBar(
@@ -27,7 +26,7 @@ class PostUtils {
     String endPoint = '/v1/post/status';
     var uri = host + endPoint;
 
-    _sharedPreferences = await _prefs; 
+    _sharedPreferences = await _prefs;
     String authToken = AuthUtils.getToken(_sharedPreferences);
 
     try {
@@ -37,6 +36,7 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -66,6 +66,7 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -95,6 +96,7 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -125,6 +127,7 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -156,6 +159,7 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -185,6 +189,7 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -217,6 +222,7 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -248,6 +254,7 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -282,6 +289,7 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -313,6 +321,7 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -343,6 +352,7 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -373,6 +383,8 @@ class PostUtils {
         "Authorization": "Bearer $authToken",
         "Accept": "application/json"
       });
+  client.close();
+
 
       final responseJson = json.decode(response.body);
       return responseJson;

@@ -8,6 +8,7 @@ Future<List<ForumThread>> fetchForumThreadList(
     http.Client client, String forumPath) async {
   var uri = 'https://api.africoders.com/v1/$forumPath?order=updated_at|DESC';
   final response = await client.get(uri);
+  client.close();
 
   if (response.statusCode == 200) {
     Map<String, dynamic> mapResponse = json.decode(response.body);

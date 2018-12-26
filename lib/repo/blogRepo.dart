@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 //Fecthing blogs with no comments
 Future<List<Blog>> fetchBlogWithNoComments(http.Client client) async {
   final response = await client.get(blogWithNoCommentApi);
+  client.close();
 
   if (response.statusCode == 200) {
     Map<String, dynamic> mapResponse = json.decode(response.body);

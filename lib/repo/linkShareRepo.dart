@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 //Fecthing links with no comments
 Future<List<LinkShare>> fetchLinkShareWithNoComments(http.Client client) async {
   final response = await client.get(linkShareWithNoCommentApi);
+  client.close();
 
   if (response.statusCode == 200) {
     Map<String, dynamic> mapResponse = json.decode(response.body);

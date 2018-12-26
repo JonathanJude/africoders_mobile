@@ -4,10 +4,10 @@ import 'package:africoders_mobile/globals.dart';
 import 'package:africoders_mobile/model/jobAdModel.dart';
 import 'package:http/http.dart' as http;
 
-
 //Fecthing Jobs with no comments
 Future<List<JobAd>> fetchJobAdWithNoComments(http.Client client) async {
   final response = await client.get(jobAdWithNoCommentApi);
+  client.close();
 
   if (response.statusCode == 200) {
     Map<String, dynamic> mapResponse = json.decode(response.body);

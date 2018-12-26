@@ -17,6 +17,7 @@ class NetworkUtils {
     try {
       final response =
           await client.post(uri, body: {'name': name, 'password': password});
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;
@@ -38,6 +39,7 @@ class NetworkUtils {
     try {
       final response = await client.post(uri,
           body: {'name': name, 'password': password, 'email': email});
+      client.close();
 
       final responseJson = json.decode(response.body);
       return responseJson;

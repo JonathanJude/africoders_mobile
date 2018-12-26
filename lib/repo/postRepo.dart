@@ -6,6 +6,7 @@ import 'package:http/http.dart' as http;
 Future<Post> fetchAPostWithComments(http.Client client, int postId) async {
   String uri = "https://api.africoders.com/v1/post?id=$postId&include=comment";
   final response = await client.get(uri);
+  client.close();
 
   if (response.statusCode == 200) {
     Map<String, dynamic> mapResponse = json.decode(response.body);
