@@ -36,6 +36,8 @@ class PostIconsOptions extends StatefulWidget {
 class PostIconsOptionsState extends State<PostIconsOptions> {
   var iconSize = 17.0;
   var textSize = 12.0;
+  var iconButtonPadding = EdgeInsets.symmetric(horizontal: 2.0, vertical: 1.0);
+
   //Handling user Authentication Token
   Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
@@ -308,6 +310,7 @@ class PostIconsOptionsState extends State<PostIconsOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
+          padding: iconButtonPadding,
           icon: Icon(
             Icons.edit,
             size: iconSize,
@@ -330,6 +333,7 @@ class PostIconsOptionsState extends State<PostIconsOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
+          padding: iconButtonPadding,
           icon: Icon(
             Icons.clear,
             size: iconSize,
@@ -373,6 +377,7 @@ class PostIconsOptionsState extends State<PostIconsOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
+          padding: iconButtonPadding,
           icon: Icon(Icons.thumb_up),
           onPressed: () {
             //TODO: add likePost onPressed
@@ -395,6 +400,7 @@ class PostIconsOptionsState extends State<PostIconsOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
+          padding: iconButtonPadding,
           icon: Icon(Icons.thumb_down),
           onPressed: () {
             //TODO: add dislikePost onPressed
@@ -417,6 +423,7 @@ class PostIconsOptionsState extends State<PostIconsOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
+          padding: iconButtonPadding,
           icon: Icon(Icons.share),
           onPressed: () {
             //TODO: add sharePost onPressed

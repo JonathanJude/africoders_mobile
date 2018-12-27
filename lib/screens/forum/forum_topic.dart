@@ -192,26 +192,6 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
           color: Colors.grey,
           height: 1.0,
         ),
-/*         SizedBox(height: 10.0),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            Icon(
-              Icons.comment,
-              color: Color(0xFF527980),
-              size: 17.0,
-            ),
-            SizedBox(width: 6.0),
-            Text(
-              'Comments',
-              style: TextStyle(
-                  color: Color(0xFF527980),
-                  fontSize: 22.0,
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.w600),
-            ),
-          ],
-        ), */
         SizedBox(height: 15.0),
         PostList(
           postsList: commentsList,
@@ -230,7 +210,7 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
         text,
         style: TextStyle(
             color: Color(0xFF527980),
-            fontSize: 28.0,
+            fontSize: 25.0,
             fontWeight: FontWeight.w600),
       ),
     );
@@ -254,15 +234,15 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
             Text(
               'Started by $originalPosterName',
               style: TextStyle(
-                  fontSize: 15.0,
-                  fontWeight: FontWeight.w800,
+                  fontSize: 14.0,
+                  fontWeight: FontWeight.w700,
                   color: Color(0xFF44ADA6)),
             ),
             Text(
               'on $timePosted',
               style: TextStyle(
-                fontSize: 15.0,
-                fontWeight: FontWeight.w700,
+                fontSize: 13.0,
+                fontWeight: FontWeight.w300,
                 color: Color(0xFF64828A),
               ),
             )
@@ -279,7 +259,7 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
         text,
         style: TextStyle(
           color: Color(0xFF54797F),
-          fontSize: 16.0,
+          fontSize: 15.0,
         ),
       ),
     );

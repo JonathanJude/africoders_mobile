@@ -13,7 +13,6 @@ import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-
 class BlogArticle extends StatefulWidget {
   final int postId;
   BlogArticle({this.postId});
@@ -126,6 +125,8 @@ class _BlogArticleState extends State<BlogArticle> {
         margin: const EdgeInsets.only(top: 100.0),
         child: new Center(
             child: new Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new AfricodersLoader(),
             new Container(
@@ -178,12 +179,6 @@ class _BlogArticleState extends State<BlogArticle> {
           SizedBox(height: 20.0),
           buildFullThreadText(articleContent),
           SizedBox(height: 15.0),
-          /* PostIcons(
-            likesCount: likesCount,
-            disLikesCount: disLikesCount,
-            sharesCount: sharesCount,
-            postId: postId,
-          ), */
           PostIconsOptions(
             body: articleContent,
             dislikesCount: disLikesCount,
@@ -225,14 +220,14 @@ class _BlogArticleState extends State<BlogArticle> {
         SizedBox(width: 5.0),
         Text(
           views,
-          style: TextStyle(fontSize: 12.0),
+          style: TextStyle(fontSize: 11.0),
         ),
         SizedBox(width: 5.0),
         Icon(Icons.timer),
         SizedBox(width: 5.0),
         Text(
           formatTime,
-          style: TextStyle(fontSize: 12.0),
+          style: TextStyle(fontSize: 11.0),
         )
       ],
     );
@@ -319,7 +314,7 @@ class _BlogArticleState extends State<BlogArticle> {
         text,
         style: TextStyle(
           color: Color(0xFF54797F),
-          fontSize: 16.0,
+          fontSize: 15.0,
         ),
       ),
     );
@@ -332,7 +327,7 @@ class _BlogArticleState extends State<BlogArticle> {
         text,
         style: TextStyle(
             color: Color(0xFF527980),
-            fontSize: 26.0,
+            fontSize: 24.0,
             fontWeight: FontWeight.w600),
       ),
     );

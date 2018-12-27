@@ -23,7 +23,7 @@ class JobTitleTextField extends StatelessWidget {
             enabledBorder: textFieldBorder,
             border: textFieldBorder,
             prefixIcon: Icon(
-              Icons.mail,
+              Icons.title,
               color: Color(0xFF9CE0AD),
             ),
             labelText: 'Job Title',

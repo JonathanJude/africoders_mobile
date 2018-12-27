@@ -61,8 +61,8 @@ class JobList extends StatelessWidget {
           }));
         },
         leading: Container(
-          height: 70.0,
-          width: 70.0,
+          height: 60.0,
+          width: 60.0,
           child: Image.network(
             imageUrl,
             fit: BoxFit.cover,
@@ -78,16 +78,8 @@ class JobList extends StatelessWidget {
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
-                    fontSize: 19.0),
+                    fontSize: 17.0),
               ),
-              /* SizedBox(height: 7.0),
-              Text(
-                jobContent,
-                style: TextStyle(
-                  color: Color(0xFFFEFEFE),
-                  fontSize: 12.0,
-                ),
-              ), */
               SizedBox(height: 12.0),
             ],
           ),
@@ -140,7 +132,7 @@ class JobList extends StatelessWidget {
         style: TextStyle(
             color: primaryTextColor,
             fontSize: 22.0,
-            fontWeight: FontWeight.w300),
+            fontWeight: FontWeight.w800),
       ),
     );
   }

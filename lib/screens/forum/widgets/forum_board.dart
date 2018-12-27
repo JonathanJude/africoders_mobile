@@ -24,7 +24,7 @@ class ForumBoard extends StatelessWidget {
               .push(CupertinoPageRoute<Null>(builder: (BuildContext context) {
             return new ForumThreads(
               forumPath: boardData.path,
-              forumName: boardData.container,
+              forumName: boardData.board,
               forumId: boardData.fid,
             );
           }));

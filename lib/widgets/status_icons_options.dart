@@ -36,6 +36,7 @@ class StatusPostIconOptions extends StatefulWidget {
 class StatusPostIconOptionsState extends State<StatusPostIconOptions> {
   var iconSize = 17.0;
   var textSize = 12.0;
+  var iconButtonPadding = EdgeInsets.symmetric(horizontal: 0.0, vertical: 1.0);
 
   //Handling user Authentication Token
   Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
@@ -289,46 +290,32 @@ class StatusPostIconOptionsState extends State<StatusPostIconOptions> {
 
   //ToEdit Post
   Widget editPostButton(GlobalKey scaffoldKey) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: <Widget>[
-        IconButton(
-          padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 1.0),
-          icon: Icon(
-            Icons.edit,
-            size: iconSize,
-          ),
-          onPressed: () {
-            displayEditDialog(scaffoldKey, widget.body, widget.postId);
-          },
-          color: Color(0xFF45ADA6),
-          iconSize: iconSize,
-        ),
-      ],
+    return IconButton(
+      padding: iconButtonPadding,
+      icon: Icon(
+        Icons.edit,
+        size: iconSize,
+      ),
+      onPressed: () {
+        displayEditDialog(scaffoldKey, widget.body, widget.postId);
+      },
+      color: Color(0xFF45ADA6),
     );
   }
 
   //Delete post  button
   Widget deletePostButton(GlobalKey scaffoldKey) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: <Widget>[
-        IconButton(
-          padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 1.0),
-          icon: Icon(
-            Icons.clear,
-            size: iconSize,
-            color: Colors.red,
-          ),
-          onPressed: () {
-            displayDeleteDialog(scaffoldKey, widget.postId);
-          },
-          color: Color(0xFF45ADA6),
-          iconSize: iconSize,
-        ),
-      ],
+    return IconButton(
+      padding: iconButtonPadding,
+      icon: Icon(
+        Icons.clear,
+        size: iconSize,
+        color: Colors.red,
+      ),
+      onPressed: () {
+        displayDeleteDialog(scaffoldKey, widget.postId);
+      },
+      //color: Color(0xFF45ADA6),
     );
   }
 
@@ -345,12 +332,10 @@ class StatusPostIconOptionsState extends State<StatusPostIconOptions> {
           likeButton(),
           disLikeButton(),
           shareButton(),
-          _id == widget.userId
-              ? editPostButton(widget.scaffoldKey)
-              : SizedBox(),
+          _id == widget.userId ? editPostButton(widget.scaffoldKey) : Text(''),
           _id == widget.userId
               ? deletePostButton(widget.scaffoldKey)
-              : SizedBox(),
+              : Text(''),
         ],
       ),
     );
@@ -383,7 +368,7 @@ class StatusPostIconOptionsState extends State<StatusPostIconOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
-          padding: EdgeInsets.symmetric(horizontal: 2.0, vertical: 1.0),
+          padding: iconButtonPadding,
           icon: Icon(Icons.thumb_up, size: iconSize),
           onPressed: () {
             //TODO: add likePost onPressed
@@ -406,7 +391,7 @@ class StatusPostIconOptionsState extends State<StatusPostIconOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
-          padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 1.0),
+          padding: iconButtonPadding,
           icon: Icon(Icons.thumb_down, size: iconSize),
           onPressed: () {
             //TODO: add dislikePost onPressed
@@ -429,7 +414,7 @@ class StatusPostIconOptionsState extends State<StatusPostIconOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
-          padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 1.0),
+          padding: iconButtonPadding,
           icon: Icon(Icons.share, size: iconSize),
           onPressed: () {
             //TODO: add sharePost onPressed

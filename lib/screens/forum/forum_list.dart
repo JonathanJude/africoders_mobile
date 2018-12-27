@@ -82,9 +82,10 @@ class ForumListings extends StatelessWidget {
         child: Text(
           'Forums',
           style: TextStyle(
-              fontSize: 35.0,
-              color: primaryTextColor,
-              fontWeight: FontWeight.w800),
+            fontSize: 22.0,
+            color: primaryTextColor,
+            fontWeight: FontWeight.w800,
+          ),
         ),
       ),
       SizedBox(height: 15.0),

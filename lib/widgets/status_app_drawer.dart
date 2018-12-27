@@ -1,4 +1,5 @@
 import 'package:africoders_mobile/colors.dart';
+import 'package:africoders_mobile/profile/my_profile.dart';
 import 'package:africoders_mobile/utils/auth_util.dart';
 import 'package:africoders_mobile/utils/network_util.dart';
 import 'package:africoders_mobile/widgets/custom_badge.dart';
@@ -113,43 +114,51 @@ class StatusAppDrawerState extends State<StatusAppDrawer> {
             ),
           ),
           SizedBox(height: 25.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            mainAxisSize: MainAxisSize.max,
-            children: <Widget>[
-              ClipOval(
-                child: Container(
-                  alignment: Alignment.center,
-                  height: 60,
-                  width: 60,
-                  child: Image.network(
-                    avatarUrl ??
-                        'https://m.africoders.com/media/users/default.png',
-                    fit: BoxFit.cover,
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(
+                  MaterialPageRoute<Null>(builder: (BuildContext context) {
+                return new MyProfileScreen();
+              }));
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisSize: MainAxisSize.max,
+              children: <Widget>[
+                ClipOval(
+                  child: Container(
+                    alignment: Alignment.center,
+                    height: 60,
+                    width: 60,
+                    child: Image.network(
+                      avatarUrl ??
+                          'https://m.africoders.com/media/users/default.png',
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
-              ),
-              SizedBox(width: 15.0),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    name ?? "UserName",
-                    style: TextStyle(
-                        fontSize: 15.0,
-                        fontWeight: FontWeight.w800,
-                        color: buttonColor),
-                  ),
-                  Text(
-                    'Full Member',
-                    style: TextStyle(
-                        fontSize: 15.0,
-                        fontWeight: FontWeight.w200,
-                        color: Color(0xFFFEFEFE)),
-                  )
-                ],
-              )
-            ],
+                SizedBox(width: 15.0),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      name ?? "UserName",
+                      style: TextStyle(
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.w800,
+                          color: buttonColor),
+                    ),
+                    Text(
+                      'View Profile',
+                      style: TextStyle(
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.w200,
+                          color: Color(0xFFFEFEFE)),
+                    )
+                  ],
+                )
+              ],
+            ),
           ),
           SizedBox(height: 25.0),
           Row(
@@ -164,7 +173,7 @@ class StatusAppDrawerState extends State<StatusAppDrawer> {
                 icon: Icon(MdiIcons.information, color: buttonColor),
                 onPressed: () {},
                 badgeColor: Colors.red,
-                itemCount: 4,
+                itemCount: 1,
               ),
               Icon(
                 Icons.settings,

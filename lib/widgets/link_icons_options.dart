@@ -1,4 +1,5 @@
 import 'package:africoders_mobile/colors.dart';
+import 'package:africoders_mobile/screens/link/links_home.dart';
 import 'package:africoders_mobile/utils/auth_util.dart';
 import 'package:africoders_mobile/utils/post_utils.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';
@@ -38,6 +39,7 @@ class LinksIconOptions extends StatefulWidget {
 class LinksIconOptionsState extends State<LinksIconOptions> {
   var iconSize = 13.0;
   var textSize = 12.0;
+  var iconButtonPadding = EdgeInsets.symmetric(horizontal: 2.0, vertical: 1.0);
 
   //Handling user Authentication Token
   Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
@@ -100,8 +102,12 @@ class LinksIconOptionsState extends State<LinksIconOptions> {
       } else if (responseJson['status'] != "success") {
         PostUtils.showSnackBar(scaffoldKey, 'Authorization Error!');
       } else {
-        scaffoldKey.currentState.setState(() {});
-        Navigator.of(context).pop();
+        //scaffoldKey.currentState.setState(() {});
+
+        Navigator.of(scaffoldKey.currentContext).pushReplacement(
+            MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new LinkHome();
+        }));
       }
       _hideLoading();
       /*  } else {
@@ -333,7 +339,7 @@ class LinksIconOptionsState extends State<LinksIconOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
-          padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 1.0),
+          padding: iconButtonPadding,
           icon: Icon(
             Icons.edit,
             size: iconSize,
@@ -356,7 +362,7 @@ class LinksIconOptionsState extends State<LinksIconOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
-          padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 1.0),
+          padding: iconButtonPadding,
           icon: Icon(
             Icons.remove_from_queue,
             size: iconSize,
@@ -401,7 +407,7 @@ class LinksIconOptionsState extends State<LinksIconOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
-          padding: EdgeInsets.symmetric(horizontal: 2.0, vertical: 1.0),
+          padding: iconButtonPadding,
           icon: Icon(Icons.thumb_up, size: iconSize),
           onPressed: () {
             //TODO: add likePost onPressed
@@ -424,7 +430,7 @@ class LinksIconOptionsState extends State<LinksIconOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
-          padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 1.0),
+          padding: iconButtonPadding,
           icon: Icon(Icons.thumb_down, size: iconSize),
           onPressed: () {
             //TODO: add dislikePost onPressed
@@ -447,7 +453,7 @@ class LinksIconOptionsState extends State<LinksIconOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
-          padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 1.0),
+          padding: iconButtonPadding,
           icon: Icon(Icons.share, size: iconSize),
           onPressed: () {
             //TODO: add sharePost onPressed

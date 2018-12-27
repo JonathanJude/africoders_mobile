@@ -24,10 +24,10 @@ class JobContentTextField extends StatelessWidget {
             enabledBorder: textFieldBorder,
             border: textFieldBorder,
             prefixIcon: Icon(
-              Icons.mail,
+              Icons.description,
               color: Color(0xFF9CE0AD),
             ),
-            labelText: 'job Description',
+            labelText: 'Job Description',
             labelStyle: TextStyle(color: Color(0xFF9CE0AD))),
       ),
     );

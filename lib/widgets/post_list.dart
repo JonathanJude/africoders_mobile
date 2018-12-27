@@ -15,7 +15,7 @@ class PostList extends StatelessWidget {
     return Column(
       children: postsList
           .map(
-            (post) => statusComment(
+            (post) => postComment(
                   userName: post.user.name,
                   timePosted: post.created.date,
                   commentText: post.body,
@@ -50,7 +50,7 @@ class PostList extends StatelessWidget {
     );
   }
 
-  Widget userStatusText(String statusText) {
+  Widget userPostText(String statusText) {
     return Text(
       //'Hey guys, this os a new status',
       statusText,
@@ -61,7 +61,7 @@ class PostList extends StatelessWidget {
     );
   }
 
-  Widget statusComment({
+  Widget postComment({
     String userName,
     String timePosted,
     String commentText,
@@ -113,7 +113,7 @@ class PostList extends StatelessWidget {
               ],
             ),
             SizedBox(height: 10.0),
-            userStatusText(commentText),
+            userPostText(commentText),
             SizedBox(height: 8.0),
             Align(
               alignment: Alignment.bottomRight,

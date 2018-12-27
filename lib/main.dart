@@ -1,4 +1,5 @@
 import 'package:africoders_mobile/colors.dart';
+import 'package:africoders_mobile/profile/my_profile.dart';
 import 'package:africoders_mobile/screens/login.dart';
 import 'package:africoders_mobile/screens/signup_successful.dart';
 import 'package:flutter/material.dart';
@@ -13,11 +14,9 @@ class AfricodersMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
+      theme: ThemeData(primarySwatch: Colors.green, fontFamily: 'Raleway'),
       home: LoginPage(),
-      //home: SignUpSuccess(),
+      //home: MyProfileScreen(),
     );
   }
 }

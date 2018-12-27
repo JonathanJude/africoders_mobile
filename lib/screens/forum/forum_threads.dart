@@ -5,6 +5,7 @@ import 'package:africoders_mobile/screens/forum/create_thread.dart';
 import 'package:africoders_mobile/screens/forum/forum_topic.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';
 import 'package:africoders_mobile/widgets/app_drawer.dart';
+import 'package:africoders_mobile/widgets/date_time_formats.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:timeago/timeago.dart' as timeago;
@@ -59,7 +60,6 @@ class _ForumThreadsState extends State<ForumThreads> {
       ),
     );
   }
-
 }
 
 class ForumThreadList extends StatelessWidget {
@@ -79,7 +79,7 @@ class ForumThreadList extends StatelessWidget {
             Text(
               forumName,
               style: TextStyle(
-                  fontSize: 35.0,
+                  fontSize: 30.0,
                   color: primaryTextColor,
                   fontWeight: FontWeight.w800),
             ),
@@ -90,12 +90,14 @@ class ForumThreadList extends StatelessWidget {
         Column(
           children: threads
               .map(
-                (thread) => buildForumTopic(context,
-                    topicTitle: thread.title,
-                    topicCreator: thread.user.name,
-                    repliesCount: thread.replies,
-                    lastPostTime: thread.updated.date,
-                    postId: thread.id),
+                (thread) => buildForumTopic(
+                      context,
+                      topicTitle: thread.title,
+                      topicCreator: thread.user.name,
+                      repliesCount: thread.replies,
+                      lastPostTime: thread.updated.date,
+                      postId: thread.id,
+                    ),
               )
               .toList(),
         )
@@ -112,7 +114,7 @@ class ForumThreadList extends StatelessWidget {
     String lastPostUser,
     int postId,
   }) {
-    lastPostTime = timeago.format(DateTime.parse(lastPostTime));
+    lastPostTime = dateAndTimeFormatter(lastPostTime);
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
@@ -128,7 +130,9 @@ class ForumThreadList extends StatelessWidget {
               return new ForumTopicScreen(postId: postId);
             }));
           },
-          leading: Icon(Icons.chat_bubble, color: primaryTextColor),
+          leading: int.parse(repliesCount) > 10
+              ? Icon(Icons.trending_up, color: primaryTextColor)
+              : Icon(Icons.chat_bubble, color: primaryTextColor),
           title: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -137,9 +141,10 @@ class ForumThreadList extends StatelessWidget {
                 child: Text(
                   topicTitle,
                   style: TextStyle(
-                      fontSize: 19.0,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white),
+                    fontSize: 17.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
                 ),
               ),
               SizedBox(height: 5.0),
@@ -148,9 +153,10 @@ class ForumThreadList extends StatelessWidget {
                 child: Text(
                   'Started by $topicCreator  ~  ${repliesCount == "0" ? 'No' : repliesCount} Replies  ~  Last Reply: $lastPostTime',
                   style: TextStyle(
-                      color: Color(0xFFFEFEFE),
-                      fontSize: 13.0,
-                      fontWeight: FontWeight.w200),
+                    color: Color(0xFFFEFEFE),
+                    fontSize: 12.0,
+                    fontWeight: FontWeight.w200,
+                  ),
                 ),
               )
             ],

@@ -88,27 +88,29 @@ class _PlaceJobAdState extends State<PlaceJobAd> {
       endDrawer: AppDrawer(context: context),
       backgroundColor: mainBgColor,
       appBar: buildAppBar(context),
-      body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 5.0),
-        children: <Widget>[
-          placeAJobHeader(),
-          SizedBox(height: 20.0),
-          ErrorBox(isError: _isError, errorText: _errorText),
-          SizedBox(height: 10.0),
-          JobTitleTextField(
-            titleController: _titleController,
-            titleError: _titleError,
-          ),
-          SizedBox(height: 15.0),
-          JobContentTextField(
-            textController: _textController,
-            textError: _textError,
-          ),
-          SizedBox(height: 15.0),
-          PlaceJobADButton(
-            onPressed: _onPlaceJobAD,
-          )
-        ],
+      body: Center(
+        child: ListView(
+          padding: EdgeInsets.symmetric(horizontal: 5.0),
+          children: <Widget>[
+            placeAJobHeader(),
+            SizedBox(height: 20.0),
+            ErrorBox(isError: _isError, errorText: _errorText),
+            SizedBox(height: 10.0),
+            JobTitleTextField(
+              titleController: _titleController,
+              titleError: _titleError,
+            ),
+            SizedBox(height: 15.0),
+            JobContentTextField(
+              textController: _textController,
+              textError: _textError,
+            ),
+            SizedBox(height: 15.0),
+            PlaceJobADButton(
+              onPressed: _onPlaceJobAD,
+            )
+          ],
+        ),
       ),
     );
   }
@@ -145,11 +147,11 @@ class _PlaceJobAdState extends State<PlaceJobAd> {
       alignment: Alignment.centerLeft,
       padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
       child: Text(
-        'Start New Blog',
+        'Place Job Ad',
         style: TextStyle(
             color: primaryTextColor,
             fontSize: 22.0,
-            fontWeight: FontWeight.w300),
+            fontWeight: FontWeight.w800),
       ),
     );
   }

@@ -126,6 +126,8 @@ class _JobArticleState extends State<JobArticle> {
         margin: const EdgeInsets.only(top: 100.0),
         child: new Center(
             child: new Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new AfricodersLoader(),
             new Container(
@@ -311,7 +313,7 @@ class _JobArticleState extends State<JobArticle> {
         textParse,
         style: TextStyle(
           color: Color(0xFF54797F),
-          fontSize: 16.0,
+          fontSize: 15.0,
         ),
       ),
     );
@@ -324,7 +326,7 @@ class _JobArticleState extends State<JobArticle> {
         text,
         style: TextStyle(
             color: Color(0xFF527980),
-            fontSize: 26.0,
+            fontSize: 24.0,
             fontWeight: FontWeight.w600),
       ),
     );

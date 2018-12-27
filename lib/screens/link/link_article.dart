@@ -241,21 +241,21 @@ class _LinkArticleState extends State<LinkArticle> {
     );
   }
 
-  Row commentsText(String commentsCount) {
+  Widget commentsText(String commentsCount) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         Icon(
           Icons.comment,
           color: Color(0xFF527980),
-          size: 17.0,
+          size: 15.0,
         ),
         SizedBox(width: 6.0),
         Text(
           'Comments ($commentsCount)',
           style: TextStyle(
               color: Color(0xFF527980),
-              fontSize: 22.0,
+              fontSize: 19.0,
               fontStyle: FontStyle.italic,
               fontWeight: FontWeight.w600),
         ),
@@ -326,7 +326,7 @@ class _LinkArticleState extends State<LinkArticle> {
             textParse,
             style: TextStyle(
               color: Color(0xFF54797F),
-              fontSize: 16.0,
+              fontSize: 15.0,
             ),
           ),
           SizedBox(height: 8.0),
@@ -351,7 +351,7 @@ class _LinkArticleState extends State<LinkArticle> {
         text,
         style: TextStyle(
             color: Color(0xFF527980),
-            fontSize: 26.0,
+            fontSize: 24.0,
             fontWeight: FontWeight.w600),
       ),
     );

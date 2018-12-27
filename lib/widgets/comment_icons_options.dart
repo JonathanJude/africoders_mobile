@@ -34,6 +34,8 @@ class CommentIconsOptions extends StatefulWidget {
 class CommentIconsOptionsState extends State<CommentIconsOptions> {
   var iconSize = 17.0;
   var textSize = 12.0;
+  var iconButtonPadding = EdgeInsets.symmetric(horizontal: 2.0, vertical: 1.0);
+
   //Handling user Authentication Token
   Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
@@ -277,17 +279,6 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
       content: Center(child: AfricodersLoader()),
     );
 
-//display dialog
-    /* _isLoading
-        ? showDialog(
-            barrierDismissible: false,
-            context: scaffoldKey.currentContext,
-            builder: (BuildContext context) => diaglogForLoading)
-        : showDialog(
-            barrierDismissible: false,
-            context: scaffoldKey.currentContext,
-            builder: (BuildContext context) => dialogForEdit); */
-
     !_isLoading
         ? showDialog(
             barrierDismissible: false,
@@ -306,6 +297,7 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
+          padding: iconButtonPadding,
           icon: Icon(
             Icons.edit,
             size: iconSize,
@@ -327,6 +319,7 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
+          padding: iconButtonPadding,
           icon: Icon(
             Icons.clear,
             size: iconSize,
@@ -370,6 +363,7 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
+          padding: iconButtonPadding,
           icon: Icon(
             Icons.thumb_up,
             size: iconSize,
@@ -395,6 +389,7 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
+          padding: iconButtonPadding,
           icon: Icon(
             Icons.thumb_down,
             size: iconSize,
@@ -420,6 +415,7 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         IconButton(
+          padding: iconButtonPadding,
           icon: Icon(
             Icons.share,
             size: iconSize,
