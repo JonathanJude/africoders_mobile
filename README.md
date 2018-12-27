@@ -15,6 +15,7 @@ Mobile App client for [Africoders](https://www.africoders.com)
 
 - Adding caching for offline usage
 - User profile settings
+- Add pagination
 - Like, Dislike & Sharing of posts
 - Add Messaging
 - Adding formatted BBCodes & smileys
@@ -23,8 +24,32 @@ Mobile App client for [Africoders](https://www.africoders.com)
 ## Built with
 
 - [Flutter](https://flutter.io/) - Google's cross-platform UI toolkit
-- [Dart](https://www.dartlang.org/) - Google's general -purpose language
+- [Dart](https://www.dartlang.org/) - Google's general-purpose language
+
+## Screenshots
+
+![alt](/preview/login.png)
+
+![alt](/preview/signup_success.png)
+
+![alt](/preview/status1.png)
+
+![alt](/preview/status2.png)
+
+![alt](/preview/side_drawer.png)
+
+![alt](/preview/profile.png)
+
+![alt](/preview/forum_list.png)
+
+![alt](/preview/thread_list.png)
+
+![alt](/preview/forum_topic.png)
+
+![alt](/preview/edit-post.png)
+
+![alt](/preview/delete_post.png)
 
 ## Download App
 
-For Android [[APK]](/Africoders.apk) | For iOS.. No MAC for iOS build :(
+For Android [[APK]](/preview/Africoders_beta.apk) | For iOS..

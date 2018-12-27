@@ -220,7 +220,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
 
   String birthDateFormatter(String dateTimeString) {
     var dateTime = DateTime.parse(dateTimeString);
-    var formatter = new DateFormat('d MMMM, y');
+    var formatter = new DateFormat('d, MMMM');
     //var formatter = new DateFormat('E, d MMM, y ').add_jm();
     String formatted = formatter.format(dateTime);
     return formatted;

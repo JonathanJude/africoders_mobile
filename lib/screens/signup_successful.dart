@@ -33,7 +33,7 @@ class SignUpSuccess extends StatelessWidget {
                   ),
                   SizedBox(height: 15.0),
                   Text(
-                    "Hello $userName, You have successfully signed up on Africoders.com! \n Explore and join discussions with other African developers!",
+                    "Hello JudeJay, You have successfully signed up on Africoders.com! \n Explore and join discussions with other African developers!",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: buttonColor,

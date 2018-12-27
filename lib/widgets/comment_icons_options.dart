@@ -100,10 +100,11 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
         } else if (responseJson == 'NetworkError') {
           PostUtils.showSnackBar(scaffoldKey, null);
         } else if (responseJson['status'] != "success") {
-          PostUtils.showSnackBar(scaffoldKey, 'Authorization Error!');
+          PostUtils.showSnackBar(
+              scaffoldKey, 'Authorization Error! Try logging in again');
         } else {
           scaffoldKey.currentState.setState(() {});
-          Navigator.of(context).pop();
+          //Navigator.of(context).pop();
         }
         _hideLoading();
       } else {
