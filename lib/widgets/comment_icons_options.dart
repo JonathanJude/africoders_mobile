@@ -104,7 +104,7 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
               scaffoldKey, 'Authorization Error! Try logging in again');
         } else {
           scaffoldKey.currentState.setState(() {});
-          //Navigator.of(context).pop();
+          Navigator.of(context).pop();
         }
         _hideLoading();
       } else {
