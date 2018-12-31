@@ -1,3 +1,4 @@
+import 'package:africoders_mobile/colors.dart';
 import 'package:africoders_mobile/repo/userProfileRepo.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';
 import 'package:flutter/material.dart';
@@ -14,16 +15,19 @@ class UserProfileScreen extends StatefulWidget {
 class _UserProfileScreenState extends State<UserProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-      future: fetchUserProfile(http.Client(), widget.userId),
-      builder: (context, snapshot) {
-        if (snapshot.hasError) print(snapshot.error);
-        return snapshot.hasData
-            ? ProfileDetails(details: snapshot.data)
-            : Center(
-                child: AfricodersLoader(),
-              );
-      },
+    return Material(
+      color: mainBgColor,
+      child: FutureBuilder(
+        future: fetchUserProfile(http.Client(), widget.userId),
+        builder: (context, snapshot) {
+          if (snapshot.hasError) print(snapshot.error);
+          return snapshot.hasData
+              ? ProfileDetails(details: snapshot.data)
+              : Center(
+                  child: AfricodersLoader(),
+                );
+        },
+      ),
     );
   }
 }

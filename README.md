@@ -49,6 +49,7 @@ Mobile App client for [Africoders](https://www.africoders.com)
 ![alt](/preview/edit-post.png)
 
 ![alt](/preview/delete_post.png)
+![alt](/preview/user_profile.png)
 
 ## Download App
 

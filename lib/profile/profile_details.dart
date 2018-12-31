@@ -90,7 +90,14 @@ class ProfileDetailsState extends State<ProfileDetails> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ProfileTile(
-              title: widget.details.name,
+              title: widget.details.first.isEmpty
+                  ? widget.details.name
+                  : widget.details.first +
+                      ' ' +
+                      widget.details.last +
+                      ' (' +
+                      widget.details.name +
+                      ') ',
               subtitle: widget.details.occupation,
             ),
             SizedBox(

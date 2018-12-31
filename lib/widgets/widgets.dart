@@ -6,21 +6,26 @@ Widget africodersUserName(
     {@required BuildContext context,
     @required int userId,
     @required String userName}) {
-  return FlatButton(
-    child: Text(userName,
-        style: TextStyle(
-            //color: Color(0xFFFEFEFE),
-            color: Color(0xFF54797F),
-            fontSize: 14.0,
-            fontWeight: FontWeight.w800)),
-    onPressed: () {
-      Navigator.of(context)
-          .push(MaterialPageRoute<Null>(builder: (BuildContext context) {
-        return new UserProfileScreen(
-          userId: userId,
-        );
-      }));
-    },
+  return Align(
+    alignment: Alignment.topLeft,
+    child: FlatButton(
+      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+      padding: EdgeInsets.zero,
+      child: Text(userName,
+          style: TextStyle(
+              color: Color(0xFFFEFEFE),
+              //color: Color(0xFF54797F),
+              fontSize: 14.0,
+              fontWeight: FontWeight.w800)),
+      onPressed: () {
+        Navigator.of(context)
+            .push(MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new UserProfileScreen(
+            userId: userId,
+          );
+        }));
+      },
+    ),
   );
 }
 
