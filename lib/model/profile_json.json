@@ -1,0 +1,30 @@
+{
+    "profile": {
+        "id": 6,
+        "name": "dhtml",
+        "vanity": "dhtml",
+        "gender": "Male",
+        "avatarUrl": "https://africoders.com/media/pictures/picture-6-1501858132.jpg",
+        "profileUrl": "https://africoders.com/u/dhtml",
+        "first": "Anthony",
+        "last": "Ogundipe",
+        "bio": "I am a software developer and web-application developer who loves has great passion for internet. I develop dynamic and responsive applications mostly on the web and on Linux and Microsoft Windows.#webapplications #javafx #phpdeveloper #javascript #node.js\r\n\r\nI built this app some time back, you can find it on <a href=\"http://www.phpbrowserbox.com\">www.phpbrowserbox.com</a>",
+        "url": "http://africoders.com",
+        "company": "Africoders",
+        "location": "Lagos, Nigeria",
+        "occupation": "I am a cross-platform programmer!",
+        "phone": "07030290746",
+        "created": {
+            "date": "2018-09-03 03:42:29.000000",
+            "timezone_type": 3,
+            "timezone": "Africa/Lagos"
+        },
+        "updated": {
+            "date": "2018-12-31 16:02:39.000000",
+            "timezone_type": 3,
+            "timezone": "Africa/Lagos"
+        },
+        "birthdate": "1983-03-25 01:00:00"
+    },
+    "status": "success"
+}

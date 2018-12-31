@@ -3,10 +3,9 @@ import 'dart:convert';
 import 'package:africoders_mobile/model/forumThreadModel.dart';
 import 'package:http/http.dart' as http;
 
-//Fecthing blogs with no comments
 Future<List<ForumThread>> fetchForumThreadList(
     http.Client client, String forumPath) async {
-  var uri = 'https://api.africoders.com/v1/$forumPath?order=updated_at|DESC';
+  var uri = 'https://api.africoders.com/v1/$forumPath?order=updated_at|DESC&limit=20';
   final response = await client.get(uri);
   client.close();
 

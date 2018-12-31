@@ -202,6 +202,7 @@ class _LinkArticleState extends State<LinkArticle> {
           authorDetails(
             authorImage: authorImage,
             authorName: authorName,
+            authorId: userId,
           ),
           SizedBox(height: 10.0),
           commentsText(commentsCount),
@@ -264,7 +265,7 @@ class _LinkArticleState extends State<LinkArticle> {
   }
 
   Container authorDetails(
-      {String authorImage, String authorName, String authorUrl}) {
+      {String authorImage, String authorName, String authorUrl, int authorId}) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 15.0),
       decoration: BoxDecoration(
@@ -297,13 +298,16 @@ class _LinkArticleState extends State<LinkArticle> {
                 fit: BoxFit.cover,
               ),
             ),
-            title: Text(
+            title: africodersUserName(
+                context: context, userName: authorName, userId: authorId),
+
+            /* Text(
               authorName,
               style: TextStyle(
                   color: Color(0xFF527980),
                   fontSize: 14.0,
                   fontWeight: FontWeight.w800),
-            ),
+            ), */
             subtitle: Text(
               authorUrl ?? '',
               style: TextStyle(fontSize: 12.0, color: dividerColor),

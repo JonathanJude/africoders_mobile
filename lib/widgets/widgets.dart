@@ -1,5 +1,28 @@
 import 'package:africoders_mobile/colors.dart';
+import 'package:africoders_mobile/profile/user_profile.dart';
 import 'package:flutter/material.dart';
+
+Widget africodersUserName(
+    {@required BuildContext context,
+    @required int userId,
+    @required String userName}) {
+  return FlatButton(
+    child: Text(userName,
+        style: TextStyle(
+            //color: Color(0xFFFEFEFE),
+            color: Color(0xFF54797F),
+            fontSize: 14.0,
+            fontWeight: FontWeight.w800)),
+    onPressed: () {
+      Navigator.of(context)
+          .push(MaterialPageRoute<Null>(builder: (BuildContext context) {
+        return new UserProfileScreen(
+          userId: userId,
+        );
+      }));
+    },
+  );
+}
 
 Widget listDivider() => Divider(
       color: dividerColor,

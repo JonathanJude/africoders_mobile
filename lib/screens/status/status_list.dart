@@ -10,6 +10,7 @@ import 'package:africoders_mobile/widgets/africdoders_loader.dart';
 import 'package:africoders_mobile/widgets/comment_icons_options.dart';
 import 'package:africoders_mobile/widgets/expanding_widget.dart';
 import 'package:africoders_mobile/widgets/status_icons_options.dart';
+import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
@@ -231,14 +232,17 @@ class StatusListState extends State<StatusList> {
     );
   }
 
-  Widget userNameText(String userName) {
-    return Text(
+  Widget userNameText(String userName, int userId) {
+    return africodersUserName(
+        context: context, userName: userName, userId: userId);
+
+    /* Text(
       userName,
       style: TextStyle(
           color: Color(0xFFFEFEFE),
           fontSize: 14.0,
           fontWeight: FontWeight.w800),
-    );
+    ); */
   }
 
   Widget userCircleAvatar(String imgUrl) {
@@ -293,7 +297,7 @@ class StatusListState extends State<StatusList> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
-                  userNameText(userName),
+                  userNameText(userName, userId),
                   Text(
                     timePostedParsed,
                     style: TextStyle(
@@ -364,7 +368,7 @@ class StatusListState extends State<StatusList> {
             ListTile(
               contentPadding: EdgeInsets.fromLTRB(6.0, 0.0, 6.0, 0.0),
               leading: userCircleAvatar(imgUrl),
-              title: userNameText(userName),
+              title: userNameText(userName, userId),
               trailing: Text(
                 timePostedParsed,
                 style: TextStyle(

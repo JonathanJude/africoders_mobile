@@ -3,6 +3,7 @@ import 'package:africoders_mobile/components/parse_html.dart';
 import 'package:africoders_mobile/widgets/comment_icons_options.dart';
 import 'package:africoders_mobile/widgets/date_time_formats.dart';
 import 'package:africoders_mobile/widgets/post_options.dart';
+import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
@@ -31,15 +32,18 @@ class PostList extends StatelessWidget {
     );
   }
 
-  Widget userNameText(String userName) {
-    return Text(
+  Widget userNameText(String userName, int userId, BuildContext context) {
+    return africodersUserName(
+        context: context, userName: userName, userId: userId);
+
+    /* Text(
       userName,
       style: TextStyle(
           //color: Color(0xFFFEFEFE),
           color: Color(0xFF54797F),
           fontSize: 14.0,
           fontWeight: FontWeight.w800),
-    );
+    ); */
   }
 
   Widget userCircleAvatar(String imgUrl) {
@@ -97,7 +101,7 @@ class PostList extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
                   child: userCircleAvatar(imgUrl),
                 ),
-                userNameText(userName),
+                userNameText(userName, userId, scaffoldKey.currentContext),
                 Expanded(
                   child: Align(
                     alignment: Alignment.centerRight,

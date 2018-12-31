@@ -173,7 +173,8 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
       children: <Widget>[
         topicTitleText(threadTitle),
         SizedBox(height: 15.0),
-        userDetails(originalPosterImage, originalPosterName, timePosted),
+        userDetails(
+            originalPosterImage, originalPosterName, timePosted, userId),
         SizedBox(height: 20.0),
         buildFullThreadText(threadContent),
         SizedBox(height: 15.0),
@@ -216,8 +217,8 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
     );
   }
 
-  Widget userDetails(
-      String imgUrl, String originalPosterName, String timePosted) {
+  Widget userDetails(String imgUrl, String originalPosterName,
+      String timePosted, int originalPosterId) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       mainAxisSize: MainAxisSize.max,
@@ -231,12 +232,23 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
-              'Started by $originalPosterName',
-              style: TextStyle(
-                  fontSize: 14.0,
-                  fontWeight: FontWeight.w700,
-                  color: Color(0xFF44ADA6)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Text(
+                  'Started by ',
+                  style: TextStyle(
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.w700,
+                      color: Color(0xFF44ADA6)),
+                ),
+                africodersUserName(
+                  context: context,
+                  userName: originalPosterName,
+                  userId: originalPosterId,
+                ),
+              ],
             ),
             Text(
               'on $timePosted',
