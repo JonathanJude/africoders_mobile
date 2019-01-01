@@ -291,7 +291,7 @@ class _BlogArticleState extends State<BlogArticle> {
               ),
             ),
             title: africodersUserName(
-                context: context, userName: authorName, userId: authorId),
+                context: context, userName: authorName, userId: authorId, isColored: true),
 
             /* Text(
               authorName,

@@ -244,10 +244,10 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
                       color: Color(0xFF44ADA6)),
                 ),
                 africodersUserName(
-                  context: context,
-                  userName: originalPosterName,
-                  userId: originalPosterId,
-                ),
+                    context: context,
+                    userName: originalPosterName,
+                    userId: originalPosterId,
+                    isColored: true),
               ],
             ),
             Text(

@@ -34,7 +34,7 @@ class PostList extends StatelessWidget {
 
   Widget userNameText(String userName, int userId, BuildContext context) {
     return africodersUserName(
-        context: context, userName: userName, userId: userId);
+        context: context, userName: userName, userId: userId, isColored: true);
 
     /* Text(
       userName,

@@ -290,7 +290,11 @@ class _JobArticleState extends State<JobArticle> {
               ),
             ),
             title: africodersUserName(
-                context: context, userName: authorName, userId: authorId),
+              context: context,
+              userName: authorName,
+              userId: authorId,
+              isColored: true,
+            ),
 
             /* Text(
               authorName,

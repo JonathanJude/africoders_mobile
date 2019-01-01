@@ -28,28 +28,28 @@ Mobile App client for [Africoders](https://www.africoders.com)
 
 ## Screenshots
 
-![alt](/preview/login.png)
+![Login Screen](/preview/login.png)
 
-![alt](/preview/signup_success.png)
+![Sign up successfully](/preview/signup_success.png)
 
-![alt](/preview/status1.png)
+![Status screen](/preview/status1.png)
 
-![alt](/preview/status2.png)
+![Status with comments screen](/preview/status2.png)
 
-![alt](/preview/side_drawer.png)
+![App side drawer](/preview/side_drawer.png)
 
-![alt](/preview/profile.png)
+![My profile screen](/preview/profile.png)
 
-![alt](/preview/forum_list.png)
+![Forum listing](/preview/forum_list.png)
 
-![alt](/preview/thread_list.png)
+![Threads list](/preview/thread_list.png)
 
-![alt](/preview/forum_topic.png)
+![Forum topic](/preview/forum_topic.png)
 
-![alt](/preview/edit-post.png)
+![Edit a post](/preview/edit-post.png)
 
-![alt](/preview/delete_post.png)
-![alt](/preview/user_profile.png)
+![Delete  a post](/preview/delete_post.png)
+![view user profile](/preview/user_profile.png)
 
 ## Download App
 

@@ -234,7 +234,7 @@ class StatusListState extends State<StatusList> {
 
   Widget userNameText(String userName, int userId) {
     return africodersUserName(
-        context: context, userName: userName, userId: userId);
+        context: context, userName: userName, userId: userId, isColored: false);
 
     /* Text(
       userName,

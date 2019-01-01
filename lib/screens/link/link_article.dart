@@ -299,7 +299,11 @@ class _LinkArticleState extends State<LinkArticle> {
               ),
             ),
             title: africodersUserName(
-                context: context, userName: authorName, userId: authorId),
+              context: context,
+              userName: authorName,
+              userId: authorId,
+              isColored: true,
+            ),
 
             /* Text(
               authorName,
