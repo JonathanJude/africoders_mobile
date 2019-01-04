@@ -10,8 +10,8 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:shared_preferences/shared_preferences.dart';
 
 class StatusAppDrawer extends StatefulWidget {
-  final BuildContext context;
-  StatusAppDrawer({@required this.context});
+  //final BuildContext context;
+  //StatusAppDrawer({@required this.context});
   @override
   StatusAppDrawerState createState() {
     return new StatusAppDrawerState();
@@ -49,16 +49,16 @@ class StatusAppDrawerState extends State<StatusAppDrawer> {
       _avatarUrl = avatarUrl;
     });
 
-    if (_authToken == null) {
+    /* if (_authToken == null) {
       _logout();
-    }
+    } */
   }
 
   /*  _logout() {
     NetworkUtils.logoutUser(_scaffoldKey.currentContext, _sharedPreferences);
   } */
-  _logout() {
-    NetworkUtils.logoutUser(widget.context, _sharedPreferences);
+  _logout(BuildContext context) {
+    NetworkUtils.logoutUser(context, _sharedPreferences);
   }
 
   /*  _logoutContext(BuildContext context) {
@@ -181,7 +181,7 @@ class StatusAppDrawerState extends State<StatusAppDrawer> {
               ),
               IconButton(
                 icon: Icon(MdiIcons.logout),
-                onPressed: _logout,
+                onPressed: () => _logout,
                 color: Colors.red,
               ),
             ],

@@ -22,7 +22,7 @@ class _ForumListState extends State<ForumList> {
     return Scaffold(
         appBar: buildAppBar(context),
         backgroundColor: mainBgColor,
-        endDrawer: AppDrawer(context: context),
+        endDrawer: AppDrawer(),
         body: FutureBuilder<Map<String, dynamic>>(
           future: fetchForumListing(http.Client()),
           builder: (context, snapshot) {

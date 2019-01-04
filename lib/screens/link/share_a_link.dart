@@ -92,7 +92,7 @@ class _ShareALinkState extends State<ShareALink> {
 
   Widget _shareALinkScreen() {
     return Scaffold(
-      endDrawer: AppDrawer(context: context),
+      endDrawer: AppDrawer(),
       backgroundColor: mainBgColor,
       appBar: buildAppBar(context),
       body: ListView(

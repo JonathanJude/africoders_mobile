@@ -8,7 +8,6 @@ import 'package:africoders_mobile/widgets/app_drawer.dart';
 import 'package:africoders_mobile/widgets/date_time_formats.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:timeago/timeago.dart' as timeago;
 import 'package:http/http.dart' as http;
 
 class ForumThreads extends StatefulWidget {
@@ -28,7 +27,8 @@ class _ForumThreadsState extends State<ForumThreads> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      endDrawer: AppDrawer(context: context),
+      key: _scaffoldKey,
+      endDrawer: AppDrawer(),
       backgroundColor: mainBgColor,
       appBar: buildAppBar(context),
       body: FutureBuilder<List<ForumThread>>(

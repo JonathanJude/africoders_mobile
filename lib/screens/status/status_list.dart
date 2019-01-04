@@ -9,6 +9,7 @@ import 'package:africoders_mobile/utils/post_utils.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';
 import 'package:africoders_mobile/widgets/comment_icons_options.dart';
 import 'package:africoders_mobile/widgets/expanding_widget.dart';
+import 'package:africoders_mobile/widgets/render_html.dart';
 import 'package:africoders_mobile/widgets/status_icons_options.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +17,9 @@ import 'package:timeago/timeago.dart' as timeago;
 
 class StatusList extends StatefulWidget {
   final List<StatusModel> statuses;
+  final int currentUserId;
 
-  StatusList({this.statuses});
+  StatusList({this.statuses, this.currentUserId});
 
   @override
   StatusListState createState() {
@@ -29,6 +31,8 @@ class StatusListState extends State<StatusList> {
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   final TextEditingController _statusTextInput = TextEditingController();
   final TextEditingController _commentTextInput = TextEditingController();
+
+  
 
   //Post Status Comment
 
@@ -254,13 +258,17 @@ class StatusListState extends State<StatusList> {
   }
 
   Widget userStatusText(String statusText) {
-    String statusTextParsed = parseHtmlString(statusText);
-    return Text(
-      //'Hey guys, this os a new status',
-      statusTextParsed,
-      style: TextStyle(
+    return RenderHtml(
+      htmlText: statusText,
+      textStyle: TextStyle(
           color: Colors.white, fontSize: 14.0, fontWeight: FontWeight.w400),
     );
+    //String statusTextParsed = parseHtmlString(statusText);//
+    // return Text(
+    //   statusTextParsed,
+    //   style: TextStyle(
+    //       color: Colors.white, fontSize: 14.0, fontWeight: FontWeight.w400),
+    // );
   }
 
   Widget statusComment({
@@ -320,6 +328,7 @@ class StatusListState extends State<StatusList> {
                   scaffoldKey: _scaffoldKey,
                   sharesCount: shares,
                   userId: userId,
+                  currentUserId: widget.currentUserId,
                 ),
               ),
             ],

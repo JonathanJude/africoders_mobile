@@ -85,7 +85,7 @@ class _CreateBlogState extends State<CreateBlog> {
 
   Widget _createBlogScreen() {
     return Scaffold(
-      endDrawer: AppDrawer(context: context),
+      endDrawer: AppDrawer(),
       backgroundColor: mainBgColor,
       appBar: buildAppBar(context),
       body: ListView(

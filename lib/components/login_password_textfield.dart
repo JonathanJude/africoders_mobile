@@ -8,12 +8,13 @@ class LoginPasswordTextField extends StatelessWidget {
   final VoidCallback togglePassword;
   final String passwordError;
 
-  LoginPasswordTextField(
-      {this.isObscured,
-      this.eyeButtonColor,
-      this.passwordController,
-      this.togglePassword,
-      this.passwordError});
+  LoginPasswordTextField({
+    this.isObscured,
+    this.eyeButtonColor,
+    this.passwordController,
+    this.togglePassword,
+    this.passwordError,
+  });
 
   @override
   Widget build(BuildContext context) {

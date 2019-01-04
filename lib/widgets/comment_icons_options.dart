@@ -14,6 +14,7 @@ class CommentIconsOptions extends StatefulWidget {
   final int dislikesCount;
   final int sharesCount;
   final int userId;
+  final int currentUserId;
 
   CommentIconsOptions({
     @required this.scaffoldKey,
@@ -23,6 +24,7 @@ class CommentIconsOptions extends StatefulWidget {
     @required this.dislikesCount,
     @required this.sharesCount,
     @required this.userId,
+    @required this.currentUserId,
   });
 
   @override
@@ -36,7 +38,7 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
   var textSize = 12.0;
   var iconButtonPadding = EdgeInsets.symmetric(horizontal: 2.0, vertical: 1.0);
 
-  //Handling user Authentication Token
+ /*  //Handling user Authentication Token
   Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
   SharedPreferences _sharedPreferences;
@@ -56,15 +58,13 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
     String name = _sharedPreferences.getString(AuthUtils.nameKey);
     String avatarUrl = _sharedPreferences.getString(AuthUtils.avatarUrlKey);
 
-    print(authToken);
-
     setState(() {
       _authToken = authToken;
       _id = id;
       _name = name;
       _avatarUrl = avatarUrl;
     });
-  }
+  } */
 
   //Delete a Post
   void displayDeleteDialog(GlobalKey scaffoldKey, int postId) {
@@ -347,10 +347,10 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
           likeButton(),
           disLikeButton(),
           shareButton(),
-          _id == widget.userId
+          widget.currentUserId == widget.userId
               ? editPostButton(widget.scaffoldKey)
               : SizedBox(),
-          _id == widget.userId
+          widget.currentUserId == widget.userId
               ? deletePostButton(widget.scaffoldKey)
               : SizedBox(),
         ],

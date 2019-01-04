@@ -88,7 +88,7 @@ class _CreateforumThreadState extends State<CreateforumThread> {
 
   Widget _createThreadScreen() {
     return Scaffold(
-      endDrawer: AppDrawer(context: context),
+      endDrawer: AppDrawer(),
       backgroundColor: mainBgColor,
       appBar: buildAppBar(context),
       body: ListView(

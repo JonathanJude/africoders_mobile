@@ -14,7 +14,7 @@ class BlogHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      endDrawer: AppDrawer(context: context),
+      endDrawer: AppDrawer(),
       backgroundColor: mainBgColor,
       appBar: buildAppBar(context),
       body: FutureBuilder<List<Blog>>(

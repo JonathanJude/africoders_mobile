@@ -231,7 +231,7 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
     var deviceSize = MediaQuery.of(context).size;
 
     return Scaffold(
-      endDrawer: AppDrawer(context: context),
+      endDrawer: AppDrawer(),
       appBar: buildAppBar(context),
       key: _scaffoldKey,
       backgroundColor: mainBgColor,

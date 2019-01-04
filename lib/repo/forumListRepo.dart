@@ -15,14 +15,3 @@ Future<Map<String, dynamic>> fetchForumListing(http.Client client) async {
     throw Exception('Failed to load internet');
   }
 }
-/* //Fecthing blogs with no comments
-Future<Map<String, dynamic>> fetchForumListing() async {
-  final response = await http.get(forumListingApi);
-
-  if (response.statusCode == 200) {
-    Map<String, dynamic> mapResponse = json.decode(response.body);
-    return mapResponse;
-  } else {
-    throw Exception('Failed to load internet');
-  }
-} */

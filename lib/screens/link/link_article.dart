@@ -9,6 +9,7 @@ import 'package:africoders_mobile/widgets/app_drawer.dart';
 import 'package:africoders_mobile/widgets/date_time_formats.dart';
 import 'package:africoders_mobile/widgets/link_icons_options.dart';
 import 'package:africoders_mobile/widgets/post_list.dart';
+import 'package:africoders_mobile/widgets/render_html.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -153,7 +154,7 @@ class _LinkArticleState extends State<LinkArticle> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        endDrawer: AppDrawer(context: context),
+        endDrawer: AppDrawer(),
         appBar: buildAppBar(context),
         backgroundColor: Colors.white,
         key: _scaffoldKey,
@@ -323,16 +324,16 @@ class _LinkArticleState extends State<LinkArticle> {
   }
 
   Padding buildFullThreadText(String text, String linkUrl) {
-    String textParse = parseHtmlString(text);
+    //String textParse = parseHtmlString(text);
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(
-            textParse,
-            style: TextStyle(
+          RenderHtml(
+            htmlText: text,
+            textStyle: TextStyle(
               color: Color(0xFF54797F),
               fontSize: 15.0,
             ),

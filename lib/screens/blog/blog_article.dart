@@ -9,6 +9,7 @@ import 'package:africoders_mobile/widgets/app_drawer.dart';
 import 'package:africoders_mobile/widgets/date_time_formats.dart';
 import 'package:africoders_mobile/widgets/post_icons_options.dart';
 import 'package:africoders_mobile/widgets/post_list.dart';
+import 'package:africoders_mobile/widgets/render_html.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -143,7 +144,7 @@ class _BlogArticleState extends State<BlogArticle> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        endDrawer: AppDrawer(context: context),
+        endDrawer: AppDrawer(),
         appBar: buildAppBar(context),
         backgroundColor: Colors.white,
         key: _scaffoldKey,
@@ -166,7 +167,7 @@ class _BlogArticleState extends State<BlogArticle> {
     List commentsList,
     int userId,
   }) {
-    articleContent = parseHtmlString(articleContent);
+    //articleContent = parseHtmlString(articleContent);
 
     return Container(
       child: ListView(
@@ -291,7 +292,10 @@ class _BlogArticleState extends State<BlogArticle> {
               ),
             ),
             title: africodersUserName(
-                context: context, userName: authorName, userId: authorId, isColored: true),
+                context: context,
+                userName: authorName,
+                userId: authorId,
+                isColored: true),
 
             /* Text(
               authorName,
@@ -314,9 +318,9 @@ class _BlogArticleState extends State<BlogArticle> {
     //String textParse = parseHtmlString(text);
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: Text(
-        text,
-        style: TextStyle(
+      child: RenderHtml(
+        htmlText: text,
+        textStyle: TextStyle(
           color: Color(0xFF54797F),
           fontSize: 15.0,
         ),

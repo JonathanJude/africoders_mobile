@@ -9,8 +9,8 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AppDrawer extends StatefulWidget {
-  final BuildContext context;
-  AppDrawer({@required this.context});
+  //final BuildContext context;
+  //AppDrawer({@required this.context});
   @override
   AppDrawerState createState() {
     return new AppDrawerState();
@@ -18,8 +18,6 @@ class AppDrawer extends StatefulWidget {
 }
 
 class AppDrawerState extends State<AppDrawer> {
-  GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
-
   Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
   SharedPreferences _sharedPreferences;
@@ -47,17 +45,17 @@ class AppDrawerState extends State<AppDrawer> {
       _name = name;
       _avatarUrl = avatarUrl;
     });
-
+/* 
     if (_authToken == null) {
       _logout();
-    }
+    } */
   }
 
   /*  _logout() {
     NetworkUtils.logoutUser(_scaffoldKey.currentContext, _sharedPreferences);
   } */
-  _logout() {
-    NetworkUtils.logoutUser(widget.context, _sharedPreferences);
+  _logout(BuildContext context) {
+    NetworkUtils.logoutUser(context, _sharedPreferences);
   }
 
   /*  _logoutContext(BuildContext context) {
@@ -65,7 +63,7 @@ class AppDrawerState extends State<AppDrawer> {
   } */
 
   @override
-  Widget build(BuildContext context_build) {
+  Widget build(BuildContext context) {
     return Drawer(
       child: Container(
         color: mainBgColor,
@@ -198,7 +196,7 @@ class AppDrawerState extends State<AppDrawer> {
               ),
               IconButton(
                 icon: Icon(MdiIcons.logout),
-                onPressed: _logout,
+                onPressed: () => _logout,
                 color: Colors.red,
               ),
             ],

@@ -10,16 +10,26 @@ Mobile App client for [Africoders](https://www.africoders.com)
 - Job Adverts (Post Job Adverts, Editing & Deleting of Job Ads)
 - Link Shares (Share Links, Editing & Deleting of links)
 - Formatting dates & HTML chars.
+- Displaying anchor links and lauching from app to browser
+- View User's profile
+- Formmatting 'br' html tags to new lines
+- Implements 'timeago' timestamps (e.g 5minutes ago) for status comments
+- Html 'code' tags formatted with Monospace font
+- Common html tags like 'b, hr, i, img, ol, ul, etc' all formatted to work in App
 
-## Todo
+## Todo (pending release of endpoints)
 
 - Adding caching for offline usage
 - User profile settings
-- Add pagination
 - Like, Dislike & Sharing of posts
 - Add Messaging
-- Adding formatted BBCodes & smileys
 - Adding notifications to app
+
+## Issues / Bugs with Africoders
+
+- Only displays Images in base64 encoded format? Anyways, images dont display in normal format.
+- Some / a thread(s) with one comment listed infinitely
+- Calls to endpoints delays sometimes
 
 ## Built with
 
@@ -49,6 +59,7 @@ Mobile App client for [Africoders](https://www.africoders.com)
 ![Edit a post](/preview/edit-post.png)
 
 ![Delete  a post](/preview/delete_post.png)
+
 ![view user profile](/preview/user_profile.png)
 
 ## Download App

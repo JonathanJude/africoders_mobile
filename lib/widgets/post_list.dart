@@ -1,20 +1,51 @@
 import 'package:africoders_mobile/colors.dart';
 import 'package:africoders_mobile/components/parse_html.dart';
+import 'package:africoders_mobile/utils/auth_util.dart';
 import 'package:africoders_mobile/widgets/comment_icons_options.dart';
 import 'package:africoders_mobile/widgets/date_time_formats.dart';
-import 'package:africoders_mobile/widgets/post_options.dart';
+import 'package:africoders_mobile/widgets/render_html.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:timeago/timeago.dart' as timeago;
+import 'package:shared_preferences/shared_preferences.dart';
 
-class PostList extends StatelessWidget {
+class PostList extends StatefulWidget {
   final List postsList;
   final GlobalKey scaffoldKey;
   PostList({@required this.postsList, @required this.scaffoldKey});
+
+  @override
+  PostListState createState() {
+    return new PostListState();
+  }
+}
+
+class PostListState extends State<PostList> {
+  //Handling user Authentication Token
+  Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
+
+  SharedPreferences _sharedPreferences;
+
+  var _id;
+
+  @override
+  void initState() {
+    super.initState();
+    _fetchSessionAndNavigate();
+  }
+
+  _fetchSessionAndNavigate() async {
+    _sharedPreferences = await _prefs;
+    var id = _sharedPreferences.getInt(AuthUtils.userIdKey);
+
+    setState(() {
+      _id = id;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: postsList
+      children: widget.postsList
           .map(
             (post) => postComment(
                   userName: post.user.name,
@@ -26,6 +57,7 @@ class PostList extends StatelessWidget {
                   postId: post.id,
                   sharesCount: post.shares,
                   userId: post.user.id,
+                  currentUserId: _id,
                 ),
           )
           .toList(),
@@ -34,16 +66,11 @@ class PostList extends StatelessWidget {
 
   Widget userNameText(String userName, int userId, BuildContext context) {
     return africodersUserName(
-        context: context, userName: userName, userId: userId, isColored: true);
-
-    /* Text(
-      userName,
-      style: TextStyle(
-          //color: Color(0xFFFEFEFE),
-          color: Color(0xFF54797F),
-          fontSize: 14.0,
-          fontWeight: FontWeight.w800),
-    ); */
+      context: context,
+      userName: userName,
+      userId: userId,
+      isColored: true,
+    );
   }
 
   Widget userCircleAvatar(String imgUrl) {
@@ -55,14 +82,21 @@ class PostList extends StatelessWidget {
   }
 
   Widget userPostText(String statusText) {
-    return Text(
-      //'Hey guys, this os a new status',
+    return RenderHtml(
+      htmlText: statusText,
+      textStyle: TextStyle(
+        fontSize: 14.0,
+        fontWeight: FontWeight.w400,
+        color: Color(0xFF54797F),
+      ),
+    );
+    /* return Text(
       statusText,
       style: TextStyle(
           fontSize: 14.0,
           fontWeight: FontWeight.w400,
           color: Color(0xFF54797F)),
-    );
+    ); */
   }
 
   Widget postComment({
@@ -75,9 +109,10 @@ class PostList extends StatelessWidget {
     int sharesCount,
     int postId,
     int userId,
+    int currentUserId,
   }) {
     String timePostedFormat = dateAndTimeFormatter(timePosted);
-    commentText = parseHtmlString(commentText);
+    //commentText = parseHtmlString(commentText);
 
     return Container(
       decoration: BoxDecoration(
@@ -101,7 +136,8 @@ class PostList extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 8.0),
                   child: userCircleAvatar(imgUrl),
                 ),
-                userNameText(userName, userId, scaffoldKey.currentContext),
+                userNameText(
+                    userName, userId, widget.scaffoldKey.currentContext),
                 Expanded(
                   child: Align(
                     alignment: Alignment.centerRight,
@@ -126,9 +162,10 @@ class PostList extends StatelessWidget {
                 dislikesCount: disLikesCount,
                 likesCount: likesCount,
                 postId: postId,
-                scaffoldKey: scaffoldKey,
+                scaffoldKey: widget.scaffoldKey,
                 sharesCount: sharesCount,
                 userId: userId,
+                currentUserId: currentUserId,
               ),
             )
           ],

@@ -22,7 +22,6 @@ dependencies:
   url_launcher: ^4.0.3
   material_design_icons_flutter: ^3.0.3289
   flutter_offline: ^0.2.1
-  date_utils: ^0.1.0+2
 
 dev_dependencies:
   flutter_test:

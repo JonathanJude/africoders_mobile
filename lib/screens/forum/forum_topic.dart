@@ -8,6 +8,7 @@ import 'package:africoders_mobile/widgets/app_drawer.dart';
 import 'package:africoders_mobile/widgets/date_time_formats.dart';
 import 'package:africoders_mobile/widgets/post_icons_options.dart';
 import 'package:africoders_mobile/widgets/post_list.dart';
+import 'package:africoders_mobile/widgets/render_html.dart';
 import 'package:africoders_mobile/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -143,7 +144,7 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        endDrawer: AppDrawer(context: context),
+        endDrawer: AppDrawer(),
         appBar: buildAppBar(context),
         backgroundColor: Colors.white,
         key: _scaffoldKey,
@@ -166,7 +167,7 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
     int userId,
   }) {
     threadTitle = parseHtmlString(threadTitle);
-    threadContent = parseHtmlString(threadContent);
+    //threadContent = parseHtmlString(threadContent);
     timePosted = dateAndTimeFormatter(timePosted);
     return ListView(
       padding: EdgeInsets.all(20.0),
@@ -267,9 +268,9 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
   Padding buildFullThreadText(String text) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: Text(
-        text,
-        style: TextStyle(
+      child: RenderHtml(
+        htmlText: text,
+        textStyle: TextStyle(
           color: Color(0xFF54797F),
           fontSize: 15.0,
         ),

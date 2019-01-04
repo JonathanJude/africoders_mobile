@@ -53,18 +53,10 @@ class StatusPostIconOptionsState extends State<StatusPostIconOptions> {
 
   _fetchSessionAndNavigate() async {
     _sharedPreferences = await _prefs;
-    String authToken = AuthUtils.getToken(_sharedPreferences);
     var id = _sharedPreferences.getInt(AuthUtils.userIdKey);
-    String name = _sharedPreferences.getString(AuthUtils.nameKey);
-    String avatarUrl = _sharedPreferences.getString(AuthUtils.avatarUrlKey);
-
-    print(authToken);
 
     setState(() {
-      _authToken = authToken;
       _id = id;
-      _name = name;
-      _avatarUrl = avatarUrl;
     });
   }
 

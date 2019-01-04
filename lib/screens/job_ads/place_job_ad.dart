@@ -85,7 +85,7 @@ class _PlaceJobAdState extends State<PlaceJobAd> {
 
   Widget _placeJobScreen() {
     return Scaffold(
-      endDrawer: AppDrawer(context: context),
+      endDrawer: AppDrawer(),
       backgroundColor: mainBgColor,
       appBar: buildAppBar(context),
       body: Center(
