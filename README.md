@@ -64,4 +64,4 @@ Mobile App client for [Africoders](https://www.africoders.com)
 
 ## Download App
 
-For Android [[APK]](https://drive.google.com/file/d/1aQ5B1jeX6hqwtD4D2g6reAmX-lL4OSnU/view?usp=drivesdk) | For iOS..
+For Android [[APK]](https://drive.google.com/open?id=1LJoon7HKRp9BljZtOREzrSP1pEPVuhsk) | For iOS..
