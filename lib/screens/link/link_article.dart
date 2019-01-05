@@ -17,7 +17,7 @@ import 'package:http/http.dart' as http;
 
 class LinkArticle extends StatefulWidget {
   final int postId;
-  LinkArticle({this.postId});
+  LinkArticle({@required this.postId});
   _LinkArticleState createState() => _LinkArticleState();
 }
 
@@ -212,6 +212,8 @@ class _LinkArticleState extends State<LinkArticle> {
           PostList(
             postsList: commentsList,
             scaffoldKey: _scaffoldKey,
+            sectionForComment: 'link',
+            sectionId: widget.postId,
           ),
           SizedBox(height: 80.0)
         ],

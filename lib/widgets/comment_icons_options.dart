@@ -1,4 +1,9 @@
 import 'package:africoders_mobile/colors.dart';
+import 'package:africoders_mobile/screens/blog/blog_article.dart';
+import 'package:africoders_mobile/screens/forum/forum_topic.dart';
+import 'package:africoders_mobile/screens/job_ads/job_article.dart';
+import 'package:africoders_mobile/screens/link/link_article.dart';
+import 'package:africoders_mobile/screens/status/status_home.dart';
 import 'package:africoders_mobile/utils/auth_util.dart';
 import 'package:africoders_mobile/utils/post_utils.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';
@@ -15,6 +20,8 @@ class CommentIconsOptions extends StatefulWidget {
   final int sharesCount;
   final int userId;
   final int currentUserId;
+  final String sectionForComment;
+  final int sectionId;
 
   CommentIconsOptions({
     @required this.scaffoldKey,
@@ -25,6 +32,8 @@ class CommentIconsOptions extends StatefulWidget {
     @required this.sharesCount,
     @required this.userId,
     @required this.currentUserId,
+    @required this.sectionForComment,
+    @required this.sectionId,
   });
 
   @override
@@ -37,34 +46,6 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
   var iconSize = 17.0;
   var textSize = 12.0;
   var iconButtonPadding = EdgeInsets.symmetric(horizontal: 2.0, vertical: 1.0);
-
- /*  //Handling user Authentication Token
-  Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
-
-  SharedPreferences _sharedPreferences;
-
-  var _authToken, _id, _name, _avatarUrl;
-
-  @override
-  void initState() {
-    super.initState();
-    _fetchSessionAndNavigate();
-  }
-
-  _fetchSessionAndNavigate() async {
-    _sharedPreferences = await _prefs;
-    String authToken = AuthUtils.getToken(_sharedPreferences);
-    var id = _sharedPreferences.getInt(AuthUtils.userIdKey);
-    String name = _sharedPreferences.getString(AuthUtils.nameKey);
-    String avatarUrl = _sharedPreferences.getString(AuthUtils.avatarUrlKey);
-
-    setState(() {
-      _authToken = authToken;
-      _id = id;
-      _name = name;
-      _avatarUrl = avatarUrl;
-    });
-  } */
 
   //Delete a Post
   void displayDeleteDialog(GlobalKey scaffoldKey, int postId) {
@@ -91,9 +72,9 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
     _onDeleteComment() async {
       _showLoading();
       if (_valid()) {
-        var responseJson = await PostUtils.deleteComment(postId.toString());
+        Navigator.of(context).pop();
 
-        print(responseJson);
+        var responseJson = await PostUtils.deleteComment(postId.toString());
 
         if (responseJson == null) {
           PostUtils.showSnackBar(scaffoldKey, 'Something went wrong!');
@@ -103,8 +84,9 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
           PostUtils.showSnackBar(
               scaffoldKey, 'Authorization Error! Try logging in again');
         } else {
-          scaffoldKey.currentState.setState(() {});
-          Navigator.of(context).pop();
+          //scaffoldKey.currentState.setState(() {});
+          //handling navigation after deleting comment
+          navToScreenOnDelete();
         }
         _hideLoading();
       } else {
@@ -169,6 +151,57 @@ class CommentIconsOptionsState extends State<CommentIconsOptions> {
             barrierDismissible: false,
             context: scaffoldKey.currentContext,
             builder: (BuildContext context) => diaglogForLoading);
+  }
+
+  void navToScreenOnDelete() {
+    switch (widget.sectionForComment) {
+      //for forums
+      case 'forum':
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new ForumTopicScreen(postId: widget.sectionId);
+        }));
+        break;
+
+      //for blogs
+      case 'blog':
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new BlogArticle(postId: widget.sectionId);
+        }));
+        break;
+
+      //for job ads
+      case 'job':
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new JobArticle(postId: widget.sectionId);
+        }));
+        break;
+
+      //for links
+      case 'link':
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new LinkArticle(postId: widget.sectionId);
+        }));
+        break;
+
+      //for links
+      case 'status':
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new StatusHome();
+        }));
+        break;
+
+      default:
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new StatusHome();
+        }));
+        break;
+    }
   }
 
   /// Edit Post

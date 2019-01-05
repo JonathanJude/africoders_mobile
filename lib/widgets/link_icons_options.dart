@@ -91,6 +91,8 @@ class LinksIconOptionsState extends State<LinksIconOptions> {
     _onDeletePost() async {
       _showLoading();
       //if (_valid()) {
+        Navigator.of(context).pop();
+
       var responseJson = await PostUtils.deletePost(postId.toString());
 
       print(responseJson);
@@ -104,7 +106,7 @@ class LinksIconOptionsState extends State<LinksIconOptions> {
       } else {
         //scaffoldKey.currentState.setState(() {});
 
-        Navigator.of(scaffoldKey.currentContext).pushReplacement(
+        Navigator.of(context).pushReplacement(
             MaterialPageRoute<Null>(builder: (BuildContext context) {
           return new LinkHome();
         }));

@@ -1,4 +1,8 @@
 import 'package:africoders_mobile/colors.dart';
+import 'package:africoders_mobile/screens/blog/blog_home.dart';
+import 'package:africoders_mobile/screens/forum/forum_list.dart';
+import 'package:africoders_mobile/screens/job_ads/jobs_home.dart';
+import 'package:africoders_mobile/screens/status/status_home.dart';
 import 'package:africoders_mobile/utils/auth_util.dart';
 import 'package:africoders_mobile/utils/post_utils.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';
@@ -15,6 +19,7 @@ class PostIconsOptions extends StatefulWidget {
   final int dislikesCount;
   final int sharesCount;
   final int userId;
+  final String sectionForPost;
 
   PostIconsOptions({
     @required this.scaffoldKey,
@@ -25,6 +30,7 @@ class PostIconsOptions extends StatefulWidget {
     @required this.dislikesCount,
     @required this.sharesCount,
     @required this.userId,
+    @required this.sectionForPost,
   });
 
   @override
@@ -93,6 +99,8 @@ class PostIconsOptionsState extends State<PostIconsOptions> {
     _onDeletePost() async {
       _showLoading();
       if (_valid()) {
+        Navigator.of(context).pop();
+
         var responseJson = await PostUtils.deletePost(postId.toString());
 
         print(responseJson);
@@ -104,8 +112,9 @@ class PostIconsOptionsState extends State<PostIconsOptions> {
         } else if (responseJson['status'] != "success") {
           PostUtils.showSnackBar(scaffoldKey, 'Authorization Error!');
         } else {
-          scaffoldKey.currentState.setState(() {});
-          Navigator.of(context).pop();
+          //scaffoldKey.currentState.setState(() {});
+          //Navigate to appropriate screen after deletion
+          navToScreenOnDelete();
         }
         _hideLoading();
       } else {
@@ -167,6 +176,41 @@ class PostIconsOptionsState extends State<PostIconsOptions> {
         context: scaffoldKey.currentContext,
         builder: (BuildContext context) =>
             _isLoading ? diaglogForLoading : dialogForDelete);
+  }
+
+  void navToScreenOnDelete() {
+    switch (widget.sectionForPost) {
+      //for forums
+      case 'forum':
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new ForumList();
+        }));
+        break;
+
+      //for blogs
+      case 'blog':
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new BlogHome();
+        }));
+        break;
+
+      //for job ads
+      case 'job':
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new JobHome();
+        }));
+        break;
+
+      default:
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new StatusHome();
+        }));
+        break;
+    }
   }
 
   /// Edit Post

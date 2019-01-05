@@ -10,8 +10,15 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class PostList extends StatefulWidget {
   final List postsList;
+  final sectionForComment;
+  final int sectionId;
   final GlobalKey scaffoldKey;
-  PostList({@required this.postsList, @required this.scaffoldKey});
+  PostList({
+    @required this.postsList,
+    @required this.scaffoldKey,
+    @required this.sectionForComment,
+    @required this.sectionId,
+  });
 
   @override
   PostListState createState() {
@@ -166,6 +173,8 @@ class PostListState extends State<PostList> {
                 sharesCount: sharesCount,
                 userId: userId,
                 currentUserId: currentUserId,
+                sectionForComment: widget.sectionForComment,
+                sectionId: widget.sectionId,
               ),
             )
           ],

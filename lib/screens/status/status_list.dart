@@ -32,8 +32,6 @@ class StatusListState extends State<StatusList> {
   final TextEditingController _statusTextInput = TextEditingController();
   final TextEditingController _commentTextInput = TextEditingController();
 
-  
-
   //Post Status Comment
 
   bool _isCommentError = false;
@@ -329,6 +327,8 @@ class StatusListState extends State<StatusList> {
                   sharesCount: shares,
                   userId: userId,
                   currentUserId: widget.currentUserId,
+                  sectionForComment: 'status',
+                  sectionId: 1,
                 ),
               ),
             ],

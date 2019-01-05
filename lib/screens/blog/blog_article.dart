@@ -16,7 +16,7 @@ import 'package:http/http.dart' as http;
 
 class BlogArticle extends StatefulWidget {
   final int postId;
-  BlogArticle({this.postId});
+  BlogArticle({@required this.postId});
   _BlogArticleState createState() => _BlogArticleState();
 }
 
@@ -189,6 +189,7 @@ class _BlogArticleState extends State<BlogArticle> {
             sharesCount: sharesCount,
             title: articleTitle,
             userId: userId,
+            sectionForPost: 'blog',
           ),
 
           SizedBox(height: 0.0),
@@ -205,6 +206,8 @@ class _BlogArticleState extends State<BlogArticle> {
           PostList(
             postsList: commentsList,
             scaffoldKey: _scaffoldKey,
+            sectionForComment: 'blog',
+            sectionId: widget.postId,
           ),
           SizedBox(height: 80.0)
         ],

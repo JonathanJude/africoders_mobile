@@ -16,7 +16,7 @@ import 'package:http/http.dart' as http;
 
 class JobArticle extends StatefulWidget {
   final int postId;
-  JobArticle({this.postId});
+  JobArticle({@required this.postId});
   _JobArticleState createState() => _JobArticleState();
 }
 
@@ -188,6 +188,7 @@ class _JobArticleState extends State<JobArticle> {
             dislikesCount: disLikesCount,
             likesCount: likesCount,
             sharesCount: sharesCount,
+            sectionForPost: 'job',
           ),
           SizedBox(height: 0.0),
           authorDetails(
@@ -203,6 +204,8 @@ class _JobArticleState extends State<JobArticle> {
           PostList(
             postsList: commentsList,
             scaffoldKey: _scaffoldKey,
+            sectionForComment: 'job',
+            sectionId: widget.postId,
           ),
           SizedBox(height: 80.0)
         ],

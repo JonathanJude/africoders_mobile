@@ -15,7 +15,7 @@ import 'package:http/http.dart' as http;
 
 class ForumTopicScreen extends StatefulWidget {
   final int postId;
-  ForumTopicScreen({this.postId});
+  ForumTopicScreen({@required this.postId});
   _ForumTopicScreenState createState() => _ForumTopicScreenState();
 }
 
@@ -188,6 +188,7 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
           dislikesCount: disLikesCount,
           likesCount: likesCount,
           sharesCount: sharesCount,
+          sectionForPost: 'forum',
         ),
         SizedBox(height: 10.0),
         Divider(
@@ -198,6 +199,8 @@ class _ForumTopicScreenState extends State<ForumTopicScreen> {
         PostList(
           postsList: commentsList,
           scaffoldKey: _scaffoldKey,
+          sectionForComment: 'forum',
+          sectionId: widget.postId,
         ),
         SizedBox(height: 80.0),
       ],

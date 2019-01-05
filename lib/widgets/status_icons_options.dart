@@ -1,4 +1,5 @@
 import 'package:africoders_mobile/colors.dart';
+import 'package:africoders_mobile/screens/status/status_home.dart';
 import 'package:africoders_mobile/utils/auth_util.dart';
 import 'package:africoders_mobile/utils/post_utils.dart';
 import 'package:africoders_mobile/widgets/africdoders_loader.dart';
@@ -80,6 +81,8 @@ class StatusPostIconOptionsState extends State<StatusPostIconOptions> {
     _onDeletePost() async {
       _showLoading();
       //if (_valid()) {
+      Navigator.of(context).pop();
+
       var responseJson = await PostUtils.deletePost(postId.toString());
 
       print(responseJson);
@@ -91,8 +94,11 @@ class StatusPostIconOptionsState extends State<StatusPostIconOptions> {
       } else if (responseJson['status'] != "success") {
         PostUtils.showSnackBar(scaffoldKey, 'Authorization Error!');
       } else {
-        scaffoldKey.currentState.setState(() {});
-        Navigator.of(context).pop();
+        //scaffoldKey.currentState.setState(() {});
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute<Null>(builder: (BuildContext context) {
+          return new StatusHome();
+        }));
       }
       _hideLoading();
       /*  } else {
